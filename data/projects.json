@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "lumina",
+      "title": "Lumina Centro Holístico",
+      "category": "profesional",
+      "year": 2024,
+      "tags": ["Professional Site", "Wellness"],
+      "tagsEs": ["Sitio Profesional", "Bienestar"],
+      "thumb": null,
+      "thumbIcon": "bi-stars",
+      "thumbGradient": "linear-gradient(135deg, #4338CA 0%, #7C3AED 100%)",
+      "demo": true,
+      "liveUrl": "https://ronferix.github.io/lumina/",
+      "desc": "Multi-page site for an exclusive holistic wellness center in Condesa, CDMX. Services directory, unique therapy spaces, practitioner profiles and WhatsApp booking integration.",
+      "descEs": "Sitio multipágina para un exclusivo centro de bienestar holístico en Condesa, CDMX. Directorio de servicios, espacios de terapia únicos, perfiles del equipo y reservas por WhatsApp."
+    },
+    {
+      "id": "flor-armonia",
+      "title": "Flor en Armonía",
+      "category": "profesional",
+      "year": 2025,
+      "tags": ["Professional Site", "Wellness"],
+      "tagsEs": ["Sitio Profesional", "Bienestar"],
+      "thumb": null,
+      "thumbIcon": "bi-flower1",
+      "thumbGradient": "linear-gradient(135deg, #B87333 0%, #D4A96A 100%)",
+      "liveUrl": "https://ronferix.github.io/Flor-en-armonia-web/index.html",
+      "desc": "Elegant site for a personalized floral design service. Subscription model, intention-based philosophy, multilingual support (ES/EN/PT) and Instagram portfolio integration.",
+      "descEs": "Sitio elegante para un servicio de diseño floral personalizado. Modelo de suscripción, filosofía intencional, soporte multilingüe (ES/EN/PT) e integración con Instagram."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Work — NorthClick</title>
+  <meta name="description" content="See the projects we've built — real sites for real businesses. Click through and see them live.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">North<span>Click</span></a>
+        <div class="nav__links">
+          <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+          <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+          <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+          <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+        </div>
+        <a href="contacto.html" class="btn btn-primary btn-sm nav__cta" data-i18n="nav.cta">Start a project</a>
+        <button class="nav__hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+    <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contacto.html" class="btn btn-primary" data-i18n="nav.cta">Start a project</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <div class="breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span data-i18n="work.breadcrumb">Our Work</span>
+        </div>
+        <span class="label" data-i18n="work.hero.label">Portfolio</span>
+        <h1 data-i18n="work.hero.h1">Our Work</h1>
+        <p data-i18n="work.hero.sub">Every project tells a story. See them live — real pages for real businesses that took the digital leap.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PORTFOLIO ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filters -->
+      <div class="portfolio-filters reveal">
+        <button class="filter-btn active" data-filter="all"        data-i18n="work.filter.all">All</button>
+        <button class="filter-btn"        data-filter="landing"    data-i18n="work.filter.landing">Landing Page</button>
+        <button class="filter-btn"        data-filter="profesional"data-i18n="work.filter.profesional">Professional Site</button>
+      </div>
+
+      <!-- Portfolio grid — populated by js/portfolio.js -->
+      <div class="portfolio-grid"></div>
+
+      <div class="reveal" style="text-align:center; margin-top:64px; padding:40px; background:var(--surface); border-radius:var(--radius-lg);">
+        <i class="bi bi-plus-circle" style="font-size:2rem; color:var(--blue); display:block; margin-bottom:16px;"></i>
+        <h3 style="margin-bottom:10px; font-size:1.1rem;" data-i18n="work.cta.empty.h3">Your project could be here</h3>
+        <p style="max-width:420px; margin:0 auto 24px; font-size:0.88rem;" data-i18n="work.cta.empty.p">We're constantly growing. Every new project is a story we're proud to share.</p>
+        <a href="contacto.html" class="btn btn-primary" data-i18n="work.cta.empty.btn">Start my project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS ===== -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-header text-center section-header--center reveal">
+        <span class="label" data-i18n="work.process.label">How we work</span>
+        <h2 data-i18n="work.process.h2">From concept to <span style="color:var(--blue)">launch</span></h2>
+        <div class="divider divider-center"></div>
+        <p data-i18n="work.process.sub">A clear, transparent process so you always know where we stand.</p>
+      </div>
+      <div class="grid-4">
+        <div class="reveal reveal-delay-1" style="text-align:center;">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--blue);color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.1rem;font-weight:800;">1</div>
+          <h4 style="margin-bottom:10px;" data-i18n="work.step1.title">Initial consultation</h4>
+          <p style="font-size:0.83rem;" data-i18n="work.step1.desc">You tell us about your business, goals and vision. We define the project scope together.</p>
+        </div>
+        <div class="reveal reveal-delay-2" style="text-align:center;">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--dark);color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.1rem;font-weight:800;">2</div>
+          <h4 style="margin-bottom:10px;" data-i18n="work.step2.title">Design &amp; proposal</h4>
+          <p style="font-size:0.83rem;" data-i18n="work.step2.desc">We prepare a visual and technical proposal. We review together until the design reflects your brand exactly.</p>
+        </div>
+        <div class="reveal reveal-delay-3" style="text-align:center;">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--dark);color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.1rem;font-weight:800;">3</div>
+          <h4 style="margin-bottom:10px;" data-i18n="work.step3.title">Development</h4>
+          <p style="font-size:0.83rem;" data-i18n="work.step3.desc">We build the site with periodic updates. You see progress in real time and can weigh in at every stage.</p>
+        </div>
+        <div class="reveal reveal-delay-4" style="text-align:center;">
+          <div style="width:56px;height:56px;border-radius:50%;background:var(--blue);color:white;display:flex;align-items:center;justify-content:center;margin:0 auto 20px;font-size:1.1rem;font-weight:800;">4</div>
+          <h4 style="margin-bottom:10px;" data-i18n="work.step4.title">Launch</h4>
+          <p style="font-size:0.83rem;" data-i18n="work.step4.desc">Final review, cross-device testing and publish. Your site is live and ready for the world.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <h2 data-i18n="work.cta.h2">Does your business deserve a site like this?</h2>
+        <p data-i18n="work.cta.sub">Let's make it happen. Tell us your idea and we'll build your digital presence together.</p>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="contacto.html" class="btn btn-outline" data-i18n="work.cta.btn1">
+            <i class="bi bi-chat-dots-fill"></i>&nbsp; Start a conversation
+          </a>
+          <a href="catalogo.html" class="btn" style="background:white; color:var(--blue); font-weight:700;" data-i18n="work.cta.btn2">
+            View pricing &nbsp;<i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">North<span>Click</span></div>
+          <p data-i18n="footer.tagline">We craft professional digital presences that drive real businesses. Your online success is our mission.</p>
+        </div>
+        <div>
+          <h5 data-i18n="footer.nav.label">Navigation</h5>
+          <div class="footer__links">
+            <a href="index.html"    data-i18n="nav.home">Home</a>
+            <a href="catalogo.html" data-i18n="nav.services">Services</a>
+            <a href="trabajo.html"  data-i18n="nav.work">Our Work</a>
+            <a href="contacto.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.svc.label">Services</h5>
+          <div class="footer__links">
+            <a href="catalogo.html" data-i18n="footer.svc.1">Digital Presence</a>
+            <a href="catalogo.html" data-i18n="footer.svc.2">Professional Site</a>
+            <a href="catalogo.html" data-i18n="footer.svc.3">E-commerce</a>
+            <a href="catalogo.html" data-i18n="footer.svc.4">Custom Project</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.contact.label">Contact</h5>
+          <div class="footer__contact-item">
+            <i class="bi bi-envelope-fill" style="color:var(--ice);"></i>
+            <span>hola@northclick.mx</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-telephone-fill" style="color:var(--ice);"></i>
+            <span>+52 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-geo-alt-fill" style="color:var(--ice);"></i>
+            <span>México</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 NorthClick. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/portfolio.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NorthClick — Professional Web Design</title>
+  <meta name="description" content="We build professional websites that boost your business. Connect your brand with real customers through modern, functional design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">North<span>Click</span></a>
+        <div class="nav__links">
+          <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+          <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+          <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+          <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+        </div>
+        <a href="contacto.html" class="btn btn-primary btn-sm nav__cta" data-i18n="nav.cta">Start a project</a>
+        <button class="nav__hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+    <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contacto.html" class="btn btn-primary" data-i18n="nav.cta">Start a project</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg"></div>
+    <div class="hero__accent"></div>
+    <div class="hero__grid-lines"></div>
+    <div class="container">
+      <div class="grid-2">
+        <div class="hero__inner">
+          <div class="hero__tag">
+            <div class="hero__tag-dot"></div>
+            <span data-i18n="home.hero.tag">Professional web design</span>
+          </div>
+          <h1 data-i18n="home.hero.h1">Boost your business<br>in the <em>digital</em> world</h1>
+          <p class="hero__sub" data-i18n="home.hero.sub">
+            We build websites that connect your brand with real customers.
+            More than a site — an operations center working for you 24/7.
+          </p>
+          <div class="btn-group">
+            <a href="catalogo.html" class="btn btn-primary" data-i18n="home.hero.btn1">
+              <i class="bi bi-grid-3x3-gap-fill"></i>&nbsp; View services
+            </a>
+            <a href="trabajo.html" class="btn btn-outline" data-i18n="home.hero.btn2">
+              Our work &nbsp;<i class="bi bi-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero__visual">
+          <div class="hero__card hero__card--red">
+            <div class="hero__card-icon">
+              <i class="bi bi-globe2" style="color:#2563EB; font-size:1.2rem;"></i>
+            </div>
+            <h4 data-i18n="home.card1.title">Online presence</h4>
+            <p data-i18n="home.card1.desc">Your brand available to any customer, at any time, from anywhere in the world.</p>
+          </div>
+          <div class="hero__card hero__card--gold">
+            <div class="hero__card-icon">
+              <i class="bi bi-person-check-fill" style="color:#93C5FD; font-size:1.2rem;"></i>
+            </div>
+            <h4 data-i18n="home.card2.title">Client–business relationship</h4>
+            <p data-i18n="home.card2.desc">Forms, directories and contact channels that build trust from the first click.</p>
+          </div>
+          <div class="hero__card hero__card--white">
+            <div class="hero__card-icon">
+              <i class="bi bi-graph-up-arrow" style="color:rgba(255,255,255,0.55); font-size:1.2rem;"></i>
+            </div>
+            <h4 data-i18n="home.card3.title">Real growth</h4>
+            <p data-i18n="home.card3.desc">An optimized site turns visits into clients and clients into brand advocates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <div class="hero__scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== MISSION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div class="mission__text reveal-left">
+          <span class="label" data-i18n="home.mission.label">What we do</span>
+          <h2 data-i18n="home.mission.h2">We turn your business into a <span style="color:var(--blue)">digital experience</span></h2>
+          <div class="divider"></div>
+          <p data-i18n="home.mission.p1">
+            At NorthClick we believe every business, regardless of size, deserves a digital
+            presence that matches its ambitions. A website is not just a showcase — it's the
+            meeting point between your brand and the people who need it.
+          </p>
+          <p data-i18n="home.mission.p2">
+            We design every site with your customers in mind: what they need to know, how
+            they want to reach you, and what motivates them to choose you. The result is a
+            digital environment that speaks for your business even when you can't.
+          </p>
+          <div class="mission__features">
+            <div class="mission__feature">
+              <div class="mission__feature-icon"><i class="bi bi-laptop"></i></div>
+              <div class="mission__feature-text">
+                <h4 data-i18n="home.mission.f1.title">Custom design</h4>
+                <p data-i18n="home.mission.f1.desc">Every project is unique. We tailor the design to your brand identity and business goals.</p>
+              </div>
+            </div>
+            <div class="mission__feature">
+              <div class="mission__feature-icon"><i class="bi bi-phone"></i></div>
+              <div class="mission__feature-text">
+                <h4 data-i18n="home.mission.f2.title">100% responsive</h4>
+                <p data-i18n="home.mission.f2.desc">Your site will look perfect on any device: desktop, tablet, or mobile.</p>
+              </div>
+            </div>
+            <div class="mission__feature">
+              <div class="mission__feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+              <div class="mission__feature-text">
+                <h4 data-i18n="home.mission.f3.title">Optimized for results</h4>
+                <p data-i18n="home.mission.f3.desc">Page speed, basic SEO and structure designed to convert visitors into customers.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mission__visual reveal-right">
+          <div class="mission__img-wrap">
+            <div class="mission__browser">
+              <div class="mission__browser-bar">
+                <div class="mission__browser-dot" style="background:#2563EB;"></div>
+                <div class="mission__browser-dot" style="background:#93C5FD;"></div>
+                <div class="mission__browser-dot" style="background:rgba(255,255,255,0.25);"></div>
+                <div class="mission__browser-url"></div>
+              </div>
+              <div class="mission__browser-body">
+                <div class="mission__browser-line" style="width:55%; height:14px; background:rgba(37,99,235,0.35); border-radius:3px;"></div>
+                <div class="mission__browser-line" style="width:90%;"></div>
+                <div class="mission__browser-line" style="width:75%;"></div>
+                <div class="mission__browser-line" style="width:40%; margin-top:10px;"></div>
+                <div style="display:flex; gap:8px; margin-top:10px;">
+                  <div style="width:76px; height:28px; background:rgba(37,99,235,0.3); border-radius:4px;"></div>
+                  <div style="width:76px; height:28px; background:rgba(255,255,255,0.07); border-radius:4px;"></div>
+                </div>
+                <div style="margin-top:14px; display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px;">
+                  <div style="height:56px; background:rgba(255,255,255,0.05); border-radius:4px;"></div>
+                  <div style="height:56px; background:rgba(255,255,255,0.05); border-radius:4px;"></div>
+                  <div style="height:56px; background:rgba(255,255,255,0.05); border-radius:4px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mission__stat-badge">
+            <div class="num" style="font-size:1.5rem; font-weight:800; color:var(--blue); line-height:1;">
+              <span data-count="100" data-suffix="%"></span>
+            </div>
+            <div class="lbl" style="font-size:0.7rem; color:var(--text-3); margin-top:4px;">On-time delivery<br>rate</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-header text-center section-header--center reveal">
+        <span class="label" data-i18n="home.svc.label">What we offer</span>
+        <h2 data-i18n="home.svc.h2">Solutions for every <span>stage</span> of your business</h2>
+        <div class="divider divider-center"></div>
+        <p data-i18n="home.svc.sub">From your first online presence to a full e-commerce platform, we have the right plan for you.</p>
+      </div>
+      <div class="grid-3">
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-card__icon">
+            <i class="bi bi-file-earmark-richtext-fill" style="font-size:1.4rem; color:var(--blue);"></i>
+          </div>
+          <h3 data-i18n="home.svc1.title">Digital Presence</h3>
+          <p data-i18n="home.svc1.desc">Your first step online. A professional landing page that presents your business, services and how to contact you — ready to go from day one.</p>
+          <a href="catalogo.html" class="service-card__link" data-i18n="home.svc.link">See details <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-card__icon">
+            <i class="bi bi-layers-fill" style="font-size:1.4rem; color:var(--blue);"></i>
+          </div>
+          <h3 data-i18n="home.svc2.title">Professional Site</h3>
+          <p data-i18n="home.svc2.desc">A multi-page site that tells your brand's full story. Services, gallery, blog and a robust contact system with an interactive location map.</p>
+          <a href="catalogo.html" class="service-card__link" data-i18n="home.svc.link">See details <i class="bi bi-arrow-right"></i></a>
+        </div>
+        <div class="service-card service-card--soon reveal reveal-delay-3">
+          <span class="soon-badge" data-i18n="home.svc.soon">Coming soon</span>
+          <div class="service-card__icon">
+            <i class="bi bi-bag-check-fill" style="font-size:1.4rem; color:var(--blue);"></i>
+          </div>
+          <h3 data-i18n="home.svc3.title">E-commerce</h3>
+          <p data-i18n="home.svc3.desc">Take your business to the next level with a complete online store: product catalog, shopping cart and integrated payment gateway.</p>
+        </div>
+      </div>
+      <div style="text-align:center; margin-top:48px;">
+        <a href="catalogo.html" class="btn btn-outline-dark" data-i18n="home.svc.allBtn">
+          View all plans &amp; pricing <i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY A WEBSITE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="home.why.label">Why your digital presence matters</span>
+        <h2 data-i18n="home.why.h2">Why does your business <span style="color:var(--blue)">need</span> a website?</h2>
+        <div class="divider"></div>
+        <p data-i18n="home.why.sub">In a world where every search starts on Google, not being online is like not existing to your potential customers.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-item">
+          <div class="why-item__num">01</div>
+          <h4 data-i18n="home.why1.title">Your business open 24/7</h4>
+          <p data-i18n="home.why1.desc">A website works for you around the clock. Customers anywhere can learn about your business, browse your services and reach out — even while you sleep.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__num">02</div>
+          <h4 data-i18n="home.why2.title">Credibility &amp; professional trust</h4>
+          <p data-i18n="home.why2.desc">75% of consumers judge a business's credibility by its website. A polished digital presence signals professionalism before the first real interaction.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__num">03</div>
+          <h4 data-i18n="home.why3.title">Direct contact, no middlemen</h4>
+          <p data-i18n="home.why3.desc">Contact forms, interactive maps, phone numbers and social media — all in one place. Your client finds you and reaches out without friction.</p>
+        </div>
+        <div class="why-item">
+          <div class="why-item__num">04</div>
+          <h4 data-i18n="home.why4.title">Your best marketing tool</h4>
+          <p data-i18n="home.why4.desc">Unlike social media, your website is yours. You control the message, the design and the experience — no algorithms, no paid reach required.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WORK TEASER ===== -->
+  <section class="work-teaser">
+    <div class="container">
+      <div class="work-teaser__inner reveal">
+        <div class="work-teaser__text">
+          <p class="work-teaser__eyebrow" data-i18n="workTeaser.eyebrow">See what we build</p>
+          <h2 data-i18n="workTeaser.h2">Every project tells a story.<br>Come read ours.</h2>
+          <p class="work-teaser__body" data-i18n="workTeaser.body">We're a young studio with a clear goal: build websites that actually work for the businesses behind them. Take a look at what we've been crafting — and imagine what we could create together.</p>
+          <a href="trabajo.html" class="btn btn-primary" data-i18n="workTeaser.cta">Explore our work &nbsp;→</a>
+        </div>
+        <div class="work-teaser__badges">
+          <div class="work-teaser__badge">
+            <i class="bi bi-brush"></i>
+            <span data-i18n="workTeaser.b1">Custom design, no templates</span>
+          </div>
+          <div class="work-teaser__badge">
+            <i class="bi bi-lightning-charge"></i>
+            <span data-i18n="workTeaser.b2">Fast delivery, real results</span>
+          </div>
+          <div class="work-teaser__badge">
+            <i class="bi bi-chat-heart"></i>
+            <span data-i18n="workTeaser.b3">Close collaboration, always</span>
+          </div>
+          <div class="work-teaser__badge">
+            <i class="bi bi-shield-check"></i>
+            <span data-i18n="workTeaser.b4">Transparent process, no surprises</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <h2 data-i18n="home.cta.h2">Ready to take the next step?</h2>
+        <p data-i18n="home.cta.sub">Tell us about your business and we'll help you find the perfect digital solution for your needs and budget.</p>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="contacto.html" class="btn btn-outline" data-i18n="home.cta.btn1">
+            <i class="bi bi-chat-dots-fill"></i>&nbsp; Talk to us
+          </a>
+          <a href="catalogo.html" class="btn" style="background:white; color:var(--blue); font-weight:700;" data-i18n="home.cta.btn2">
+            View pricing &nbsp;<i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">North<span>Click</span></div>
+          <p data-i18n="footer.tagline">We craft professional digital presences that drive real businesses. Your online success is our mission.</p>
+        </div>
+        <div>
+          <h5 data-i18n="footer.nav.label">Navigation</h5>
+          <div class="footer__links">
+            <a href="index.html"    data-i18n="nav.home">Home</a>
+            <a href="catalogo.html" data-i18n="nav.services">Services</a>
+            <a href="trabajo.html"  data-i18n="nav.work">Our Work</a>
+            <a href="contacto.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.svc.label">Services</h5>
+          <div class="footer__links">
+            <a href="catalogo.html" data-i18n="footer.svc.1">Digital Presence</a>
+            <a href="catalogo.html" data-i18n="footer.svc.2">Professional Site</a>
+            <a href="catalogo.html" data-i18n="footer.svc.3">E-commerce</a>
+            <a href="catalogo.html" data-i18n="footer.svc.4">Custom Project</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.contact.label">Contact</h5>
+          <div class="footer__contact-item">
+            <i class="bi bi-envelope-fill" style="color:var(--ice);"></i>
+            <span>hola@northclick.mx</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-telephone-fill" style="color:var(--ice);"></i>
+            <span>+52 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-geo-alt-fill" style="color:var(--ice);"></i>
+            <span>México</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 NorthClick. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

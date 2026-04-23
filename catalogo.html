@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services & Pricing — NorthClick</title>
+  <meta name="description" content="Clear pricing for web design, redesigns, SEO and add-ons. No fine print — just honest rates and professional work.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">North<span>Click</span></a>
+        <div class="nav__links">
+          <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+          <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+          <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+          <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+        </div>
+        <a href="contacto.html" class="btn btn-primary btn-sm nav__cta" data-i18n="nav.cta">Start a project</a>
+        <button class="nav__hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+    <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contacto.html" class="btn btn-primary" data-i18n="nav.cta">Start a project</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <div class="breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span data-i18n="cat.breadcrumb">Services</span>
+        </div>
+        <span class="label" data-i18n="cat.hero.label">Services &amp; pricing</span>
+        <h1 data-i18n="cat.hero.h1">Our Services</h1>
+        <p data-i18n="cat.hero.sub">Clear plans, no fine print. Pick the one that fits, or tell us your idea and we'll build it together.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES TABS ===== -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Tab nav -->
+      <div class="cat-tabs" role="tablist">
+        <button class="cat-tab active" data-tab="static"   role="tab" data-i18n="cat.tabs.static">Static Websites</button>
+        <button class="cat-tab"        data-tab="redesign" role="tab" data-i18n="cat.tabs.redesign">Redesign &amp; Updates</button>
+        <button class="cat-tab"        data-tab="seo"      role="tab" data-i18n="cat.tabs.seo">SEO &amp; Performance</button>
+        <button class="cat-tab"        data-tab="addons"   role="tab" data-i18n="cat.tabs.addons">Add-ons &amp; Extras</button>
+      </div>
+
+      <!-- ── Panel: Static Websites ── -->
+      <div class="cat-panel active reveal" id="panel-static">
+        <p class="svc-table-intro" data-i18n="cat.static.intro">Brand-new websites built from scratch.</p>
+        <div class="svc-table-wrap">
+          <table class="svc-table">
+            <thead>
+              <tr>
+                <th data-i18n="cat.th.service">Service</th>
+                <th data-i18n="cat.th.includes">Includes</th>
+                <th data-i18n="cat.th.price">Price (USD)</th>
+                <th data-i18n="cat.th.time">Est. Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="cat.s1.name">Landing page</td>
+                <td data-i18n="cat.s1.inc">1-page, hero + sections + contact form</td>
+                <td data-i18n="cat.s1.price">$300 – $600</td>
+                <td data-i18n="cat.s1.time">3 – 5 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.s2.name">Brochure site</td>
+                <td data-i18n="cat.s2.inc">3–5 pages, responsive, nav, contact</td>
+                <td data-i18n="cat.s2.price">$500 – $1,000</td>
+                <td data-i18n="cat.s2.time">1 – 2 weeks</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.s3.name">Portfolio site</td>
+                <td data-i18n="cat.s3.inc">5–8 pages, gallery, about, contact</td>
+                <td data-i18n="cat.s3.price">$600 – $1,200</td>
+                <td data-i18n="cat.s3.time">1 – 2 weeks</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.s4.name">Restaurant / Local</td>
+                <td data-i18n="cat.s4.inc">Menu, hours, map, reservations link</td>
+                <td data-i18n="cat.s4.price">$500 – $900</td>
+                <td data-i18n="cat.s4.time">1 – 2 weeks</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.s5.name">Blog setup</td>
+                <td data-i18n="cat.s5.inc">Static blog, 5–10 posts, basic SEO</td>
+                <td data-i18n="cat.s5.price">$400 – $800</td>
+                <td data-i18n="cat.s5.time">1 week</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── Panel: Redesign & Updates ── -->
+      <div class="cat-panel reveal" id="panel-redesign">
+        <p class="svc-table-intro" data-i18n="cat.redesign.intro">Updates and improvements for existing websites.</p>
+        <div class="svc-table-wrap">
+          <table class="svc-table">
+            <thead>
+              <tr>
+                <th data-i18n="cat.th.service">Service</th>
+                <th data-i18n="cat.th.includes">Includes</th>
+                <th data-i18n="cat.th.price">Price (USD)</th>
+                <th data-i18n="cat.th.time">Est. Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="cat.r1.name">Visual redesign</td>
+                <td data-i18n="cat.r1.inc">New styles / layout, same content</td>
+                <td data-i18n="cat.r1.price">$300 – $700</td>
+                <td data-i18n="cat.r1.time">3 – 7 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.r2.name">Responsive fix</td>
+                <td data-i18n="cat.r2.inc">Mobile-friendly update for existing site</td>
+                <td data-i18n="cat.r2.price">$150 – $350</td>
+                <td data-i18n="cat.r2.time">1 – 3 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.r3.name">Content update</td>
+                <td data-i18n="cat.r3.inc">Text / image changes, page additions</td>
+                <td data-i18n="cat.r3.price">$80 – $200</td>
+                <td data-i18n="cat.r3.time">1 – 2 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.r4.name">Bug fixes</td>
+                <td data-i18n="cat.r4.inc">Layout issues, broken links, JS errors</td>
+                <td data-i18n="cat.r4.price">$50 – $150</td>
+                <td data-i18n="cat.r4.time">Hours</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── Panel: SEO & Performance ── -->
+      <div class="cat-panel reveal" id="panel-seo">
+        <p class="svc-table-intro" data-i18n="cat.seo.intro">Improve your site's visibility and speed.</p>
+        <div class="svc-table-wrap">
+          <table class="svc-table">
+            <thead>
+              <tr>
+                <th data-i18n="cat.th.service">Service</th>
+                <th data-i18n="cat.th.includes">Includes</th>
+                <th data-i18n="cat.th.price">Price (USD)</th>
+                <th data-i18n="cat.th.time">Est. Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="cat.e1.name">Basic SEO setup</td>
+                <td data-i18n="cat.e1.inc">Meta tags, sitemap, robots.txt, alt text</td>
+                <td data-i18n="cat.e1.price">$150 – $300</td>
+                <td data-i18n="cat.e1.time">1 – 2 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.e2.name">Speed optimization</td>
+                <td data-i18n="cat.e2.inc">Image compress, caching, code cleanup</td>
+                <td data-i18n="cat.e2.price">$150 – $350</td>
+                <td data-i18n="cat.e2.time">1 – 3 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.e3.name">SEO audit</td>
+                <td data-i18n="cat.e3.inc">Report of issues + recommendations</td>
+                <td data-i18n="cat.e3.price">$100 – $200</td>
+                <td data-i18n="cat.e3.time">1 – 2 days</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- ── Panel: Add-ons ── -->
+      <div class="cat-panel reveal" id="panel-addons">
+        <p class="svc-table-intro" data-i18n="cat.addons.intro">Enhance any plan with these extras.</p>
+        <div class="svc-table-wrap">
+          <table class="svc-table">
+            <thead>
+              <tr>
+                <th data-i18n="cat.th.service">Service</th>
+                <th data-i18n="cat.th.includes">Includes</th>
+                <th data-i18n="cat.th.price">Price (USD)</th>
+                <th data-i18n="cat.th.time">Est. Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="cat.a1.name">Multilingual (i18n)</td>
+                <td data-i18n="cat.a1.inc">2–3 languages, content switching</td>
+                <td data-i18n="cat.a1.price">$200 – $400</td>
+                <td data-i18n="cat.a1.time">2 – 4 days</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a2.name">Contact form</td>
+                <td data-i18n="cat.a2.inc">Functional form with email integration</td>
+                <td data-i18n="cat.a2.price">$80 – $180</td>
+                <td data-i18n="cat.a2.time">1 day</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a3.name">Google Analytics</td>
+                <td data-i18n="cat.a3.inc">GA4 setup + basic event tracking</td>
+                <td data-i18n="cat.a3.price">$60 – $120</td>
+                <td data-i18n="cat.a3.time">Hours</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a4.name">Map integration</td>
+                <td data-i18n="cat.a4.inc">Embed interactive map (Leaflet / GMaps)</td>
+                <td data-i18n="cat.a4.price">$60 – $120</td>
+                <td data-i18n="cat.a4.time">Hours</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a5.name">WhatsApp button</td>
+                <td data-i18n="cat.a5.inc">Floating button with custom message</td>
+                <td data-i18n="cat.a5.price">$30 – $60</td>
+                <td data-i18n="cat.a5.time">Hours</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a6.name">Social media icons</td>
+                <td data-i18n="cat.a6.inc">Linked icons in header / footer</td>
+                <td data-i18n="cat.a6.price">$30 – $60</td>
+                <td data-i18n="cat.a6.time">Hours</td>
+              </tr>
+              <tr>
+                <td data-i18n="cat.a7.name">Accessibility (WCAG)</td>
+                <td data-i18n="cat.a7.inc">WCAG 2.1 AA compliance audit + fixes</td>
+                <td data-i18n="cat.a7.price">Quote on req.</td>
+                <td data-i18n="cat.a7.time">Varies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Hourly note -->
+      <div style="margin-top:24px; display:flex; align-items:center; gap:10px; padding:14px 20px; background:var(--surface); border-radius:var(--radius); border-left:3px solid var(--ice);">
+        <i class="bi bi-clock" style="color:var(--ice); font-size:1rem; flex-shrink:0;"></i>
+        <p style="margin:0; font-size:0.85rem;">
+          <strong>Hourly rate: $40/hr</strong> — available for work that doesn't fit a defined scope.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== PRICING NOTES ===== -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="cat.notes.label">Important</span>
+        <h2 data-i18n="cat.notes.h2">Notes on Pricing</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="notes-grid reveal">
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n1"><strong>Lower range</strong> — client provides a design file (Figma, XD, or template). Design time is significantly reduced.</span>
+        </div>
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n2"><strong>Upper range</strong> — design created from scratch (unique graphics, animations, or full branding).</span>
+        </div>
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n3">Hourly rate of <strong>$40/hr</strong> available for work that doesn't fit a defined scope.</span>
+        </div>
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n4">All sites are built mobile-responsive and cross-browser compatible unless otherwise agreed.</span>
+        </div>
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n5">Prices do <strong>not</strong> include copywriting, photography, or stock image licensing.</span>
+        </div>
+        <div class="note-item">
+          <i class="bi bi-info-circle-fill"></i>
+          <span data-i18n="cat.notes.n6">Web accessibility (WCAG 2.1 AA) available as an add-on — ask for a quote.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TERMS OF SERVICE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label" data-i18n="cat.tos.label">Legal</span>
+        <h2 data-i18n="cat.tos.h2">Terms of Service</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="reveal" style="overflow-x:auto;">
+        <table class="tos-table">
+          <thead>
+            <tr>
+              <th data-i18n="cat.tos.th.term">Term</th>
+              <th data-i18n="cat.tos.th.detail">Detail</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-i18n="cat.tos.payment">Payment</td>
+              <td data-i18n="cat.tos.payment.d">50% upfront to start, 50% on delivery. Accepted via bank transfer, PayPal, or Stripe.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.late">Late payment</td>
+              <td data-i18n="cat.tos.late.d">If the final balance is not settled within 7 business days of delivery, a 5% weekly fee applies to the outstanding amount.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.revisions">Revisions</td>
+              <td data-i18n="cat.tos.revisions.d">Up to 2 rounds of revisions included. One round = one consolidated list of changes delivered in a single message. Additional rounds billed at $40/hr.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.scope">Scope</td>
+              <td data-i18n="cat.tos.scope.d">Any features not listed above are considered separate projects with their own quote.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.timeline">Timeline</td>
+              <td data-i18n="cat.tos.timeline.d">Estimates assume prompt feedback (within 48 hrs). Delays on the client's side may extend delivery.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.ownership">Ownership</td>
+              <td data-i18n="cat.tos.ownership.d">Full rights transferred to client upon final payment.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.hosting">Hosting</td>
+              <td data-i18n="cat.tos.hosting.d">Not included. Client is responsible for domain and hosting.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.maintenance">Maintenance</td>
+              <td data-i18n="cat.tos.maintenance.d">Available at $40/hr or as a monthly retainer — ask for details.</td>
+            </tr>
+            <tr>
+              <td data-i18n="cat.tos.methods">Payment methods</td>
+              <td data-i18n="cat.tos.methods.d">Bank transfer (ACH/wire), PayPal, Stripe (credit/debit card).</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BANNER ===== -->
+  <section class="cta-banner">
+    <div class="container">
+      <div class="cta-banner__inner reveal">
+        <h2>Know what you need?</h2>
+        <p>Send us a message and we'll put together a free, no-commitment proposal.</p>
+        <div class="btn-group" style="justify-content:center;">
+          <a href="contacto.html" class="btn btn-outline">
+            <i class="bi bi-envelope-fill"></i>&nbsp; Request a proposal
+          </a>
+          <a href="trabajo.html" class="btn" style="background:white; color:var(--blue); font-weight:700;">
+            See our work &nbsp;<i class="bi bi-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">North<span>Click</span></div>
+          <p data-i18n="footer.tagline">We craft professional digital presences that drive real businesses. Your online success is our mission.</p>
+        </div>
+        <div>
+          <h5 data-i18n="footer.nav.label">Navigation</h5>
+          <div class="footer__links">
+            <a href="index.html"    data-i18n="nav.home">Home</a>
+            <a href="catalogo.html" data-i18n="nav.services">Services</a>
+            <a href="trabajo.html"  data-i18n="nav.work">Our Work</a>
+            <a href="contacto.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.svc.label">Services</h5>
+          <div class="footer__links">
+            <a href="catalogo.html" data-i18n="footer.svc.1">Digital Presence</a>
+            <a href="catalogo.html" data-i18n="footer.svc.2">Professional Site</a>
+            <a href="catalogo.html" data-i18n="footer.svc.3">E-commerce</a>
+            <a href="catalogo.html" data-i18n="footer.svc.4">Custom Project</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.contact.label">Contact</h5>
+          <div class="footer__contact-item">
+            <i class="bi bi-envelope-fill" style="color:var(--ice);"></i>
+            <span>hola@northclick.mx</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-telephone-fill" style="color:var(--ice);"></i>
+            <span>+52 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-geo-alt-fill" style="color:var(--ice);"></i>
+            <span>México</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 NorthClick. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    /* ── Tab switcher ── */
+    document.querySelectorAll('.cat-tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.cat-panel').forEach(p => p.classList.remove('active'));
+        tab.classList.add('active');
+        const panel = document.getElementById('panel-' + tab.dataset.tab);
+        if (panel) {
+          panel.classList.add('active');
+          panel.classList.add('reveal');
+          setTimeout(() => panel.classList.add('active'), 10);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

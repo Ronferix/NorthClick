@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — NorthClick</title>
+  <meta name="description" content="Have a project in mind? Tell us about it. Free, no-commitment consultation — we get back to you in under 24 hours.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,400;0,14..32,500;0,14..32,600;0,14..32,700;0,14..32,800;1,14..32,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">North<span>Click</span></a>
+        <div class="nav__links">
+          <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+          <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+          <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+          <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+        </div>
+        <a href="contacto.html" class="btn btn-primary btn-sm nav__cta" data-i18n="nav.cta">Start a project</a>
+        <button class="nav__hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile">
+    <a href="index.html"    class="nav__link" data-i18n="nav.home">Home</a>
+    <a href="catalogo.html" class="nav__link" data-i18n="nav.services">Services</a>
+    <a href="trabajo.html"  class="nav__link" data-i18n="nav.work">Our Work</a>
+    <a href="contacto.html" class="nav__link" data-i18n="nav.contact">Contact</a>
+    <a href="contacto.html" class="btn btn-primary" data-i18n="nav.cta">Start a project</a>
+  </div>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="page-hero__inner">
+        <div class="breadcrumb">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <span class="breadcrumb-sep">/</span>
+          <span data-i18n="contact.breadcrumb">Contact</span>
+        </div>
+        <span class="label" data-i18n="contact.hero.label">Let's talk</span>
+        <h1 data-i18n="contact.hero.h1">Start your project</h1>
+        <p data-i18n="contact.hero.sub">Tell us about your business and what you need. We'll get back to you in under 24 hours with a free, no-commitment consultation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-layout">
+
+        <!-- Info panel -->
+        <div class="reveal-left">
+          <span class="label" style="display:block; margin-bottom:14px;" data-i18n="contact.info.label">How to find us</span>
+          <h2 style="margin-bottom:24px; font-size:clamp(1.5rem,2.5vw,2rem);" data-i18n="contact.info.h2">We're ready<br>to listen</h2>
+          <p style="margin-bottom:36px;" data-i18n="contact.info.p">Whether you have everything figured out or you're just exploring the idea, a 15-minute conversation can be the starting point of something great.</p>
+
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="bi bi-envelope-fill"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.info.email">Email</h4>
+              <p>hola@northclick.mx</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="bi bi-whatsapp"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.info.wa">WhatsApp</h4>
+              <p>+52 (000) 000-0000</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="bi bi-clock-fill"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.info.hours">Response time</h4>
+              <p data-i18n="contact.info.hours.v">Less than 24 business hours</p>
+            </div>
+          </div>
+          <div class="contact-info__item">
+            <div class="contact-info__icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div class="contact-info__text">
+              <h4 data-i18n="contact.info.loc">Location</h4>
+              <p data-i18n="contact.info.loc.v">Mexico — we serve clients nationwide</p>
+            </div>
+          </div>
+
+          <div style="border-top:1px solid var(--border); margin:32px 0;"></div>
+          <h5 style="font-size:0.72rem; font-weight:700; letter-spacing:0.14em; text-transform:uppercase; color:var(--text-3); margin-bottom:16px;" data-i18n="contact.social.label">Follow us</h5>
+          <div style="display:flex; gap:10px; flex-wrap:wrap;">
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--border);border-radius:var(--radius);font-size:0.83rem;font-weight:600;color:var(--text-2);transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-2)';"><i class="bi bi-instagram"></i> Instagram</a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--border);border-radius:var(--radius);font-size:0.83rem;font-weight:600;color:var(--text-2);transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-2)';"><i class="bi bi-facebook"></i> Facebook</a>
+            <a href="#" style="display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border:1.5px solid var(--border);border-radius:var(--radius);font-size:0.83rem;font-weight:600;color:var(--text-2);transition:all 0.3s ease;" onmouseover="this.style.borderColor='var(--blue)';this.style.color='var(--blue)';" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--text-2)';"><i class="bi bi-linkedin"></i> LinkedIn</a>
+          </div>
+          <div style="margin-top:32px; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--border);">
+            <div style="background:var(--surface); height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:8px; color:var(--text-3);">
+              <i class="bi bi-map" style="font-size:2rem; color:var(--border);"></i>
+              <span style="font-size:0.78rem;">Map placeholder — replace with Google Maps iframe</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="reveal-right">
+          <div class="contact-form-wrap">
+            <h3 style="margin-bottom:6px;" data-i18n="contact.form.h3">Send us a message</h3>
+            <p style="font-size:0.85rem; margin-bottom:28px;" data-i18n="contact.form.sub">All fields are required unless noted otherwise.</p>
+
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre" data-i18n="contact.form.name">Full name</label>
+                  <input type="text" id="nombre" name="nombre" data-i18n-ph="contact.form.name" placeholder="Your name" required>
+                </div>
+                <div class="form-group">
+                  <label for="email" data-i18n="contact.form.email">Email address</label>
+                  <input type="email" id="email" name="email" placeholder="you@email.com" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">
+                    <span data-i18n="contact.form.phone">Phone</span>
+                    <span style="font-weight:400; color:var(--text-3);" data-i18n="contact.form.phone.opt"> (optional)</span>
+                  </label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="+1 (000) 000-0000">
+                </div>
+                <div class="form-group">
+                  <label for="plan" data-i18n="contact.form.plan">Plan of interest</label>
+                  <select id="plan" name="plan" required>
+                    <option value="" disabled selected data-i18n="contact.form.plan.placeholder">Select a plan</option>
+                    <option value="presencia"   data-i18n="contact.form.plan.o1">Digital Presence — from $300 USD</option>
+                    <option value="profesional" data-i18n="contact.form.plan.o2">Brochure / Professional Site — from $500 USD</option>
+                    <option value="ecommerce"   data-i18n="contact.form.plan.o3">E-commerce / Full Site — from $600 USD</option>
+                    <option value="redesign"    data-i18n="contact.form.plan.o4">Redesign or update — from $80 USD</option>
+                    <option value="seo"         data-i18n="contact.form.plan.o5">SEO / Performance — from $100 USD</option>
+                    <option value="custom"      data-i18n="contact.form.plan.o6">Custom project — let's talk</option>
+                    <option value="otro"        data-i18n="contact.form.plan.o7">Not sure yet</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="negocio" data-i18n="contact.form.biz">What does your business do?</label>
+                <input type="text" id="negocio" name="negocio" data-i18n-ph="contact.form.biz.ph" placeholder="e.g. Italian restaurant in Mexico City" required>
+              </div>
+              <div class="form-group">
+                <label for="mensaje" data-i18n="contact.form.msg">Tell us about your project</label>
+                <textarea id="mensaje" name="mensaje" rows="5" data-i18n-ph="contact.form.msg.ph" placeholder="What do you need? Do you have a deadline? Do you already have a logo or images? Any detail helps us prepare a more precise proposal." required></textarea>
+              </div>
+              <input type="text" name="_gotcha" style="display:none;">
+              <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center; padding:16px;" data-i18n="contact.form.btn">
+                <i class="bi bi-send-fill"></i>&nbsp; Send message
+              </button>
+              <p style="font-size:0.75rem; color:var(--text-3); text-align:center; margin-top:14px;" data-i18n="contact.form.privacy">
+                By submitting this form you agree to allow us to contact you to respond to your inquiry.
+              </p>
+            </form>
+
+            <div class="form-success">
+              <div class="form-success__icon"><i class="bi bi-check-lg" style="font-size:1.4rem;"></i></div>
+              <h3 style="margin-bottom:10px;" data-i18n="contact.success.h3">Message sent!</h3>
+              <p style="font-size:0.9rem;" data-i18n="contact.success.p">Thanks for reaching out. We'll reply within 24 business hours with the next steps for your project.</p>
+              <a href="index.html" class="btn btn-outline-dark" style="margin-top:20px;" data-i18n="contact.success.btn">Back to home</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-header text-center section-header--center reveal">
+        <span class="label" data-i18n="contact.faq.label">FAQ</span>
+        <h2 data-i18n="contact.faq.h2">What people ask us <span style="color:var(--blue)">most</span></h2>
+        <div class="divider divider-center"></div>
+      </div>
+      <div style="max-width:720px; margin:0 auto; display:flex; flex-direction:column; gap:12px;">
+
+        <details class="reveal" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <summary style="padding:20px 24px;font-weight:600;font-size:0.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;" data-i18n="contact.faq.q1">
+            How long does my site take to be ready?
+            <i class="bi bi-chevron-down" style="color:var(--blue);transition:transform 0.3s;flex-shrink:0;"></i>
+          </summary>
+          <div style="padding:0 24px 20px;color:var(--text-2);font-size:0.88rem;line-height:1.7;" data-i18n="contact.faq.a1">
+            It depends on the plan. A landing page takes roughly 3–5 business days; a brochure site 1–2 weeks; and an e-commerce project around 3 weeks. Timelines begin once we have all your materials.
+          </div>
+        </details>
+
+        <details class="reveal reveal-delay-1" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <summary style="padding:20px 24px;font-weight:600;font-size:0.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;" data-i18n="contact.faq.q2">
+            Do I need a logo or images before we start?
+            <i class="bi bi-chevron-down" style="color:var(--blue);transition:transform 0.3s;flex-shrink:0;"></i>
+          </summary>
+          <div style="padding:0 24px 20px;color:var(--text-2);font-size:0.88rem;line-height:1.7;" data-i18n="contact.faq.a2">
+            Not necessarily. We can guide you toward free professional image resources and work with whatever you have. Logo design can be quoted separately.
+          </div>
+        </details>
+
+        <details class="reveal reveal-delay-2" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <summary style="padding:20px 24px;font-weight:600;font-size:0.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;" data-i18n="contact.faq.q3">
+            Who handles hosting and the domain?
+            <i class="bi bi-chevron-down" style="color:var(--blue);transition:transform 0.3s;flex-shrink:0;"></i>
+          </summary>
+          <div style="padding:0 24px 20px;color:var(--text-2);font-size:0.88rem;line-height:1.7;" data-i18n="contact.faq.a3">
+            Domain and hosting are not included in the plans. We'll help you choose the best option and walk you through setup at no extra charge.
+          </div>
+        </details>
+
+        <details class="reveal reveal-delay-3" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <summary style="padding:20px 24px;font-weight:600;font-size:0.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;" data-i18n="contact.faq.q4">
+            Can I update my site's content later?
+            <i class="bi bi-chevron-down" style="color:var(--blue);transition:transform 0.3s;flex-shrink:0;"></i>
+          </summary>
+          <div style="padding:0 24px 20px;color:var(--text-2);font-size:0.88rem;line-height:1.7;" data-i18n="contact.faq.a4">
+            Yes. We deliver the full source code and can set up a CMS on request so you can update text and images without coding. Monthly maintenance plans are also available.
+          </div>
+        </details>
+
+        <details class="reveal reveal-delay-4" style="background:var(--white);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;">
+          <summary style="padding:20px 24px;font-weight:600;font-size:0.95rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;user-select:none;" data-i18n="contact.faq.q5">
+            What are the payment terms?
+            <i class="bi bi-chevron-down" style="color:var(--blue);transition:transform 0.3s;flex-shrink:0;"></i>
+          </summary>
+          <div style="padding:0 24px 20px;color:var(--text-2);font-size:0.88rem;line-height:1.7;" data-i18n="contact.faq.a5">
+            50% upfront to start, 50% on delivery. We accept bank transfer, PayPal, and Stripe.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <div class="footer__logo">North<span>Click</span></div>
+          <p data-i18n="footer.tagline">We craft professional digital presences that drive real businesses. Your online success is our mission.</p>
+        </div>
+        <div>
+          <h5 data-i18n="footer.nav.label">Navigation</h5>
+          <div class="footer__links">
+            <a href="index.html"    data-i18n="nav.home">Home</a>
+            <a href="catalogo.html" data-i18n="nav.services">Services</a>
+            <a href="trabajo.html"  data-i18n="nav.work">Our Work</a>
+            <a href="contacto.html" data-i18n="nav.contact">Contact</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.svc.label">Services</h5>
+          <div class="footer__links">
+            <a href="catalogo.html" data-i18n="footer.svc.1">Digital Presence</a>
+            <a href="catalogo.html" data-i18n="footer.svc.2">Professional Site</a>
+            <a href="catalogo.html" data-i18n="footer.svc.3">E-commerce</a>
+            <a href="catalogo.html" data-i18n="footer.svc.4">Custom Project</a>
+          </div>
+        </div>
+        <div>
+          <h5 data-i18n="footer.contact.label">Contact</h5>
+          <div class="footer__contact-item">
+            <i class="bi bi-envelope-fill" style="color:var(--ice);"></i>
+            <span>hola@northclick.mx</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-telephone-fill" style="color:var(--ice);"></i>
+            <span>+52 (000) 000-0000</span>
+          </div>
+          <div class="footer__contact-item">
+            <i class="bi bi-geo-alt-fill" style="color:var(--ice);"></i>
+            <span>México</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p data-i18n="footer.copyright">&copy; 2025 NorthClick. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('details').forEach(d => {
+      d.addEventListener('toggle', () => {
+        const icon = d.querySelector('.bi-chevron-down');
+        if (icon) icon.style.transform = d.open ? 'rotate(180deg)' : '';
+      });
+    });
+  </script>
+</body>
+</html>

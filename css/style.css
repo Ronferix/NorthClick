@@ -338,8 +338,8 @@ p { color: var(--text-2); line-height: 1.75; }
 .nav__inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: 100%;
+  gap: 8px;
 }
 .nav__logo {
   font-size: 1.35rem;
@@ -376,7 +376,7 @@ p { color: var(--text-2); line-height: 1.75; }
 .nav__link:hover { color: var(--white); }
 .nav__link:hover::after, .nav__link.active::after { transform: scaleX(1); }
 .nav__link.active { color: var(--white); }
-.nav__cta { margin-left: 12px; }
+.nav__cta { margin-left: 24px; }
 .nav__hamburger {
   display: none;
   flex-direction: column;

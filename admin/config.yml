@@ -1,0 +1,70 @@
+backend:
+  name: github
+  repo: Ronferix/NorthClick
+  branch: main
+  auth_type: pkce
+  app_id: REPLACE_WITH_YOUR_GITHUB_OAUTH_APP_CLIENT_ID
+
+locale: en
+media_folder: img/projects
+public_folder: /img/projects
+
+collections:
+  - name: portfolio
+    label: Portfolio
+    files:
+      - label: Projects
+        name: projects
+        file: data/projects.json
+        fields:
+          - label: Projects
+            name: projects
+            widget: list
+            summary: "{{fields.title}} ({{fields.year}})"
+            fields:
+              - label: ID
+                name: id
+                widget: string
+                hint: "Lowercase slug, no spaces. e.g. lumina-2025"
+              - label: Title
+                name: title
+                widget: string
+              - label: Category
+                name: category
+                widget: select
+                options:
+                  - { label: "Landing Page", value: landing }
+                  - { label: "Professional Site", value: profesional }
+              - label: Year
+                name: year
+                widget: number
+                default: 2025
+              - label: Tags (English)
+                name: tags
+                widget: list
+                field: { label: Tag, name: tag, widget: string }
+              - label: Tags (Spanish)
+                name: tagsEs
+                widget: list
+                field: { label: Tag, name: tag, widget: string }
+              - label: Live URL
+                name: liveUrl
+                widget: string
+                required: false
+                hint: "Used to auto-generate the thumbnail screenshot"
+              - label: Custom thumbnail
+                name: thumb
+                widget: image
+                required: false
+                hint: "Upload only if you want a custom image instead of the auto-screenshot"
+              - label: Demo project badge
+                name: demo
+                widget: boolean
+                default: false
+                hint: "Shows a 'Demo project' label on the card"
+              - label: Description (English)
+                name: desc
+                widget: text
+              - label: Description (Spanish)
+                name: descEs
+                widget: text

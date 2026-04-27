@@ -154,7 +154,7 @@ const TRANSLATIONS = {
     'cat.tos.maintenance': 'Maintenance',
     'cat.tos.maintenance.d': 'Available at $40/hr or as a monthly retainer — ask for details.',
     'cat.tos.methods':     'Payment methods',
-    'cat.tos.methods.d':   'Bank transfer (ACH/wire), PayPal, Stripe (credit/debit card).',
+    'cat.tos.methods.d':   'PayPal. More methods (bank transfer, Stripe) coming soon.',
 
     /* ── OUR WORK ── */
     'work.hero.label': 'Portfolio',
@@ -226,7 +226,7 @@ const TRANSLATIONS = {
     'contact.faq.label': 'FAQ',
     'contact.faq.h2':    'What people ask us <span style="color:var(--blue)">most</span>',
     'contact.faq.q1': 'How long does my site take to be ready?',
-    'contact.faq.a1': 'It depends on the plan. A landing page takes roughly 3–5 business days; a brochure site 1–2 weeks; and an e-commerce project around 3 weeks. Timelines begin once we have all your materials (texts, logo, images).',
+    'contact.faq.a1': 'It depends on the plan. A landing page takes roughly 3–5 business days and a multi-page professional site 1–2 weeks. E-commerce is coming soon — when available, expect a minimum of around 3 weeks. Timelines begin once we have all your materials (texts, logo, images).',
     'contact.faq.q2': 'Do I need a logo or images before we start?',
     'contact.faq.a2': 'Not necessarily. We can guide you toward free professional image resources (like Unsplash or Pexels) and work with whatever you have. If you need a logo designed, we can quote that separately.',
     'contact.faq.q3': 'Who handles hosting and the domain?',
@@ -234,7 +234,7 @@ const TRANSLATIONS = {
     'contact.faq.q4': 'Can I update my site\'s content later?',
     'contact.faq.a4': 'Yes. We deliver the full source code and, on request, can set up a CMS so you can update text and images without touching code. We also offer monthly maintenance plans.',
     'contact.faq.q5': 'What are the payment terms?',
-    'contact.faq.a5': '50% upfront to start, 50% on delivery. We accept bank transfer, PayPal, and Stripe.',
+    'contact.faq.a5': '50% upfront to start, 50% on delivery. We currently accept PayPal. More payment methods coming soon.',
 
     /* ── FOOTER ── */
     'footer.tagline':    'We craft professional digital presences that drive real businesses. Your online success is our mission.',
@@ -395,7 +395,7 @@ const TRANSLATIONS = {
     'cat.tos.maintenance': 'Mantenimiento',
     'cat.tos.maintenance.d': 'Disponible a $40/hr o como retención mensual — consultar detalles.',
     'cat.tos.methods':     'Métodos de pago',
-    'cat.tos.methods.d':   'Transferencia bancaria, PayPal, Stripe (tarjeta de crédito/débito).',
+    'cat.tos.methods.d':   'PayPal. Próximamente más métodos (transferencia bancaria, Stripe).',
 
     /* ── OUR WORK ── */
     'work.hero.label': 'Portafolio',
@@ -467,7 +467,7 @@ const TRANSLATIONS = {
     'contact.faq.label': 'Preguntas frecuentes',
     'contact.faq.h2':    'Lo que más nos <span style="color:var(--blue)">preguntan</span>',
     'contact.faq.q1': '¿Cuánto tiempo tarda mi sitio en estar listo?',
-    'contact.faq.a1': 'Depende del plan. Una landing page tarda aproximadamente 3–5 días hábiles; un sitio brochure 1–2 semanas; y un e-commerce alrededor de 3 semanas. Los plazos comienzan una vez que tenemos todos tus materiales (textos, logo, imágenes).',
+    'contact.faq.a1': 'Depende del plan. Una landing page tarda aproximadamente 3–5 días hábiles y un sitio profesional multipágina 1–2 semanas. El e-commerce está próximamente — cuando esté disponible, espera un mínimo de alrededor de 3 semanas. Los plazos comienzan una vez que tenemos todos tus materiales (textos, logo, imágenes).',
     'contact.faq.q2': '¿Necesito tener un logo o imágenes para empezar?',
     'contact.faq.a2': 'No es indispensable. Podemos orientarte sobre recursos de imágenes profesionales gratuitas (como Unsplash o Pexels) y trabajar con lo que tengas disponible. Si necesitas diseño de logotipo, lo cotizamos por separado.',
     'contact.faq.q3': '¿Quién se encarga del hosting y el dominio?',
@@ -475,7 +475,7 @@ const TRANSLATIONS = {
     'contact.faq.q4': '¿Puedo actualizar el contenido de mi sitio después?',
     'contact.faq.a4': 'Sí. Te entregamos el código fuente completo y, si lo solicitas, podemos configurar un CMS para que actualices textos e imágenes sin necesidad de tocar código. También ofrecemos planes de mantenimiento mensual.',
     'contact.faq.q5': '¿Cuáles son las formas de pago?',
-    'contact.faq.a5': '50% al inicio y 50% a la entrega. Aceptamos transferencia bancaria, PayPal y Stripe.',
+    'contact.faq.a5': '50% al inicio y 50% a la entrega. Actualmente aceptamos PayPal. Próximamente más métodos de pago.',
 
     /* ── FOOTER ── */
     'footer.tagline':    'Creamos presencias digitales profesionales que impulsan negocios reales. Tu éxito en línea es nuestra misión.',

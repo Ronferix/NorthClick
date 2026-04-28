@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Ronferix/NorthClick
   branch: main
-  auth_type: pkce
-  app_id: REPLACE_WITH_YOUR_GITHUB_OAUTH_APP_CLIENT_ID
+  base_url: https://northclick.vercel.app
+  auth_endpoint: api/auth
 
 locale: en
 media_folder: img/projects

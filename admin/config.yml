@@ -2,8 +2,8 @@ backend:
   name: github
   repo: Ronferix/NorthClick
   branch: main
-  auth_type: pkce
-  app_id: Ov23li2ubFDbnRVbkG4d
+  base_url: https://www.northclick.net
+  auth_endpoint: api/auth
 
 locale: en
 media_folder: img/projects

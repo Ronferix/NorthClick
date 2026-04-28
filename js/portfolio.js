@@ -36,12 +36,14 @@
 
     const src = p.thumb ? p.thumb : (p.liveUrl ? autoThumb(p.liveUrl) : null);
 
+    const gradient = p.thumbGradient || 'linear-gradient(135deg,#1E3A5F,#2563EB)';
+    const icon     = p.thumbIcon    || 'bi-image';
     const thumbInner = src
       ? `<img src="${src}" alt="${p.title}" loading="lazy"
              style="width:100%;height:100%;object-fit:cover;display:block;">`
-      : `<div style="width:100%;height:100%;background:linear-gradient(135deg,#1E3A5F,#2563EB);
+      : `<div style="width:100%;height:100%;background:${gradient};
              display:flex;align-items:center;justify-content:center;">
-           <i class="bi bi-image" style="font-size:2rem;color:rgba(255,255,255,0.2);"></i>
+           <i class="bi ${icon}" style="font-size:2rem;color:rgba(255,255,255,0.35);"></i>
          </div>`;
 
     const tagsHTML = tags.map((t, i) =>

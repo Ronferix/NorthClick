@@ -112,7 +112,9 @@
     e.preventDefault();
     const btn = form.querySelector('[type="submit"]');
     const originalText = btn.textContent;
-    btn.textContent = 'Enviando...';
+    const lang = localStorage.getItem('nc-lang') || 'en';
+    const t = TRANSLATIONS[lang];
+    btn.textContent = t['contact.form.sending'];
     btn.disabled = true;
 
     try {
@@ -126,22 +128,15 @@
         const success = document.querySelector('.form-success');
         if (success) success.classList.add('show');
       } else {
-        alert('Ocurrió un error. Por favor intenta de nuevo o contáctanos directamente.');
+        alert(t['contact.form.error']);
         btn.textContent = originalText;
         btn.disabled = false;
       }
     } catch {
-      alert('Ocurrió un error de red. Por favor intenta de nuevo.');
+      alert(t['contact.form.error.network']);
       btn.textContent = originalText;
       btn.disabled = false;
     }
   });
 })();
 
-/* --- SMOOTH HOVER FOR HERO CARDS --- */
-(function () {
-  document.querySelectorAll('.hero__card').forEach(card => {
-    card.addEventListener('mouseenter', () => card.style.willChange = 'transform');
-    card.addEventListener('mouseleave', () => card.style.willChange = '');
-  });
-})();

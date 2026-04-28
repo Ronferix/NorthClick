@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(sed -i -e 's/--red: #C8102E/--blue: #2563EB/g' -e 's/--red-dark: #A50E26/--blue-dark: #1D4ED8/g' -e 's/--red-light: rgba\\(200, 16, 46, 0.08\\)/--blue-light: rgba\\(37, 99, 235, 0.08\\)/g' -e 's/--gold: #C9A84C/--ice: #93C5FD/g' -e 's/--gold-light: rgba\\(201, 168, 76, 0.12\\)/--ice-light: rgba\\(147, 197, 253, 0.12\\)/g' -e 's/--dark: #0A0A0A/--dark: #070D1A/g' -e 's/--dark-2: #1A1A1A/--dark-2: #0E1A2E/g' -e 's/--dark-3: #2E2E2E/--dark-3: #1E3A5F/g' css/style.css)",
+      "Bash(sed -i -e 's/var\\(--red-dark\\)/var\\(--blue-dark\\)/g' -e 's/var\\(--red-light\\)/var\\(--blue-light\\)/g' -e 's/var\\(--red\\)/var\\(--blue\\)/g' -e 's/var\\(--gold-light\\)/var\\(--ice-light\\)/g' -e 's/var\\(--gold\\)/var\\(--ice\\)/g' css/style.css)",
+      "Bash(sed -i -e 's/rgba\\(200,16,46/rgba\\(37,99,235/g' -e 's/rgba\\(200, 16, 46/rgba\\(37, 99, 235/g' -e 's/rgba\\(201,168,76/rgba\\(147,197,253/g' -e 's/rgba\\(201, 168, 76/rgba\\(147, 197, 253/g' css/style.css)",
+      "WebFetch(domain:ronferix.github.io)",
+      "Bash(gh pr create --title 'Build NorthClick freelance portfolio site' --body ' *)",
+      "Bash(where gh *)",
+      "Bash(winget list *)",
+      "PowerShell(Get-Command gh -ErrorAction SilentlyContinue; if \\(Test-Path \"C:\\\\Program Files\\\\GitHub CLI\\\\gh.exe\"\\) { \"found at Program Files\" } elseif \\(Test-Path \"$env:LOCALAPPDATA\\\\Programs\\\\GitHub CLI\\\\gh.exe\"\\) { \"found at LocalAppData\" } else { \"not found\" })",
+      "WebSearch",
+      "WebFetch(domain:vercel.com)"
+    ]
+  }
+}

@@ -57,6 +57,16 @@ collections:
                 widget: image
                 required: false
                 hint: "Upload only if you want a custom image instead of the auto-screenshot"
+              - label: Fallback icon (Bootstrap Icons class)
+                name: thumbIcon
+                widget: string
+                required: false
+                hint: "e.g. bi-stars — shown when there's no thumbnail or live URL"
+              - label: Fallback gradient (CSS)
+                name: thumbGradient
+                widget: string
+                required: false
+                hint: "e.g. linear-gradient(135deg, #4338CA 0%, #7C3AED 100%)"
               - label: Demo project badge
                 name: demo
                 widget: boolean

@@ -8,8 +8,15 @@
   const filterBtns = document.querySelectorAll('.filter-btn');
   if (!grid) return;
 
-  let allProjects = [];
+  const PER_PAGE = 6;
+  let allProjects  = [];
   let currentFilter = 'all';
+  let currentPage   = 1;
+
+  /* Inject pagination container after the grid */
+  const paginationEl = document.createElement('div');
+  paginationEl.className = 'pagination';
+  grid.parentNode.insertBefore(paginationEl, grid.nextSibling);
 
   try {
     const res = await fetch('data/projects.json');
@@ -24,7 +31,6 @@
     return localStorage.getItem('nc-lang') || 'en';
   }
 
-  /* Free screenshot service — no API key needed */
   function autoThumb(url) {
     return `https://s0.wordpress.com/mshots/v1/${encodeURIComponent(url)}?w=600&h=450`;
   }
@@ -33,8 +39,7 @@
     const lang  = getLang();
     const desc  = lang === 'es' && p.descEs  ? p.descEs  : p.desc;
     const tags  = lang === 'es' && p.tagsEs  ? p.tagsEs  : p.tags;
-
-    const src = p.thumb ? p.thumb : (p.liveUrl ? autoThumb(p.liveUrl) : null);
+    const src   = p.thumb ? p.thumb : (p.liveUrl ? autoThumb(p.liveUrl) : null);
 
     const gradient = p.thumbGradient || 'linear-gradient(135deg,#1E3A5F,#2563EB)';
     const icon     = p.thumbIcon    || 'bi-image';
@@ -89,23 +94,71 @@
     return card;
   }
 
-  function render(filter) {
-    currentFilter = filter;
-    grid.innerHTML = '';
+  function pageButtons(current, total) {
+    if (total <= 1) return '';
+    const pages = [];
 
-    const list = filter === 'all'
-      ? allProjects
-      : allProjects.filter(p => p.category === filter);
+    const addPage = (n) => pages.push(`<button class="pagination__page${n === current ? ' active' : ''}" data-page="${n}">${n}</button>`);
+    const addEllipsis = () => pages.push(`<span class="pagination__ellipsis">…</span>`);
+
+    if (total <= 7) {
+      for (let i = 1; i <= total; i++) addPage(i);
+    } else {
+      addPage(1);
+      if (current > 3) addEllipsis();
+      for (let i = Math.max(2, current - 1); i <= Math.min(total - 1, current + 1); i++) addPage(i);
+      if (current < total - 2) addEllipsis();
+      addPage(total);
+    }
+
+    return pages.join('');
+  }
+
+  function renderPagination(list) {
+    const lang  = getLang();
+    const total = Math.ceil(list.length / PER_PAGE);
+    const from  = list.length === 0 ? 0 : (currentPage - 1) * PER_PAGE + 1;
+    const to    = Math.min(currentPage * PER_PAGE, list.length);
+
+    const info = lang === 'es'
+      ? `Mostrando ${from}–${to} de ${list.length} proyectos`
+      : `Showing ${from}–${to} of ${list.length} projects`;
+
+    paginationEl.innerHTML = total <= 1 ? '' : `
+      <p class="pagination__info">${info}</p>
+      <div class="pagination__controls">
+        <button class="pagination__prev" data-page="${currentPage - 1}" ${currentPage === 1 ? 'disabled' : ''}>
+          <i class="bi bi-chevron-left"></i>
+        </button>
+        ${pageButtons(currentPage, total)}
+        <button class="pagination__next" data-page="${currentPage + 1}" ${currentPage === total ? 'disabled' : ''}>
+          <i class="bi bi-chevron-right"></i>
+        </button>
+      </div>`;
+
+    paginationEl.querySelectorAll('[data-page]').forEach(btn => {
+      btn.addEventListener('click', () => {
+        currentPage = parseInt(btn.dataset.page);
+        renderGrid(list);
+        window.scrollTo({ top: grid.offsetTop - 100, behavior: 'smooth' });
+      });
+    });
+  }
+
+  function renderGrid(list) {
+    grid.innerHTML = '';
 
     if (list.length === 0) {
       const lang = getLang();
       grid.innerHTML = `<p style="color:var(--text-3);font-size:0.9rem;padding:48px 0;grid-column:1/-1;">${
         lang === 'es' ? 'Próximamente proyectos en esta categoría.' : 'Projects in this category coming soon.'
       }</p>`;
+      paginationEl.innerHTML = '';
       return;
     }
 
-    list.forEach((p, i) => {
+    const page = list.slice((currentPage - 1) * PER_PAGE, currentPage * PER_PAGE);
+    page.forEach((p, i) => {
       const card = buildCard(p);
       card.style.cssText = `opacity:0;transform:translateY(20px);transition:opacity 0.4s ease ${i * 80}ms,transform 0.4s ease ${i * 80}ms`;
       grid.appendChild(card);
@@ -114,6 +167,19 @@
         card.style.transform = 'translateY(0)';
       }));
     });
+
+    renderPagination(list);
+  }
+
+  function render(filter) {
+    currentFilter = filter;
+    currentPage   = 1;
+
+    const list = filter === 'all'
+      ? allProjects
+      : allProjects.filter(p => p.category === filter);
+
+    renderGrid(list);
   }
 
   filterBtns.forEach(btn => {

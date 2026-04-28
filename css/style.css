@@ -1052,6 +1052,51 @@ p { color: var(--text-2); line-height: 1.75; }
 }
 .project-card:hover .project-card__link { gap: 10px; }
 
+/* ================================================
+   PORTFOLIO PAGINATION
+   ================================================ */
+.pagination {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.pagination__info {
+  font-size: 0.82rem;
+  color: var(--text-3);
+}
+.pagination__controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.pagination__page,
+.pagination__prev,
+.pagination__next {
+  min-width: 38px;
+  height: 38px;
+  padding: 0 10px;
+  border-radius: var(--radius);
+  border: 1.5px solid var(--border);
+  background: var(--white);
+  color: var(--text-2);
+  font-size: 0.85rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--tr);
+  cursor: pointer;
+}
+.pagination__page:hover,
+.pagination__prev:hover,
+.pagination__next:hover { border-color: var(--blue); color: var(--blue); }
+.pagination__page.active { background: var(--blue); border-color: var(--blue); color: var(--white); }
+.pagination__prev:disabled,
+.pagination__next:disabled { opacity: 0.35; pointer-events: none; }
+.pagination__ellipsis { color: var(--text-3); font-size: 0.85rem; padding: 0 4px; }
+
 
 /* ================================================
    CONTACT PAGE

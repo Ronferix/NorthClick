@@ -10,6 +10,69 @@ media_folder: img/projects
 public_folder: /img/projects
 
 collections:
+
+  # ── Services & Pricing ──────────────────────────────────────────────────────
+  - name: services
+    label: Services & Pricing
+    files:
+      - label: Services Table
+        name: services
+        file: data/services.json
+        fields:
+          - label: Service Tabs
+            name: tabs
+            widget: list
+            summary: "{{fields.label}}"
+            label_singular: Tab
+            fields:
+              - label: Tab ID (no spaces, lowercase)
+                name: id
+                widget: string
+                hint: "e.g. static, redesign, seo, addons — used as the URL anchor"
+              - label: Label (English)
+                name: label
+                widget: string
+              - label: Label (Spanish)
+                name: labelEs
+                widget: string
+              - label: Intro text (English)
+                name: intro
+                widget: text
+              - label: Intro text (Spanish)
+                name: introEs
+                widget: text
+              - label: Services
+                name: rows
+                widget: list
+                summary: "{{fields.name}} — {{fields.price}}"
+                label_singular: Service
+                fields:
+                  - label: Name (English)
+                    name: name
+                    widget: string
+                  - label: Name (Spanish)
+                    name: nameEs
+                    widget: string
+                  - label: Includes / Description (English)
+                    name: includes
+                    widget: string
+                  - label: Includes / Description (Spanish)
+                    name: includesEs
+                    widget: string
+                  - label: Price (USD)
+                    name: price
+                    widget: string
+                    hint: 'e.g. $320 – $640  or  Quote on req.'
+                  - label: Est. Time (English)
+                    name: time
+                    widget: string
+                    hint: "e.g. 3 – 5 days, Hours, Varies"
+                  - label: Est. Time (Spanish)
+                    name: timeEs
+                    widget: string
+                    hint: "e.g. 3 – 5 días, Horas, Variable"
+
+  # ── Portfolio ───────────────────────────────────────────────────────────────
   - name: portfolio
     label: Portfolio
     files:

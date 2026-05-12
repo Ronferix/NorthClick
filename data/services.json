@@ -1,0 +1,211 @@
+{
+  "tabs": [
+    {
+      "id": "static",
+      "label": "Static Websites",
+      "labelEs": "Sitios Web",
+      "intro": "Brand-new websites built from scratch.",
+      "introEs": "Sitios web construidos desde cero.",
+      "rows": [
+        {
+          "name": "Landing page",
+          "nameEs": "Landing page",
+          "includes": "1-page, hero + sections + contact form",
+          "includesEs": "1 página, hero + secciones + formulario de contacto",
+          "price": "$320 – $640",
+          "time": "3 – 5 days",
+          "timeEs": "3 – 5 días"
+        },
+        {
+          "name": "Brochure site",
+          "nameEs": "Sitio brochure",
+          "includes": "3–5 pages, responsive, nav, contact",
+          "includesEs": "3–5 páginas, responsivo, nav, contacto",
+          "price": "$500 – $1,000",
+          "time": "1 – 2 weeks",
+          "timeEs": "1 – 2 semanas"
+        },
+        {
+          "name": "Portfolio site",
+          "nameEs": "Sitio portafolio",
+          "includes": "5–8 pages, gallery, about, contact",
+          "includesEs": "5–8 páginas, galería, about, contacto",
+          "price": "$600 – $1,200",
+          "time": "1 – 2 weeks",
+          "timeEs": "1 – 2 semanas"
+        },
+        {
+          "name": "Restaurant / Local",
+          "nameEs": "Restaurante / Local",
+          "includes": "Menu, hours, map, reservations link",
+          "includesEs": "Menú, horarios, mapa, link de reservaciones",
+          "price": "$500 – $900",
+          "time": "1 – 2 weeks",
+          "timeEs": "1 – 2 semanas"
+        },
+        {
+          "name": "Blog setup",
+          "nameEs": "Blog",
+          "includes": "Static blog, 5–10 posts, basic SEO",
+          "includesEs": "Blog estático, 5–10 posts, SEO básico",
+          "price": "$400 – $800",
+          "time": "1 week",
+          "timeEs": "1 semana"
+        }
+      ]
+    },
+    {
+      "id": "redesign",
+      "label": "Redesign & Updates",
+      "labelEs": "Rediseño y Actualizaciones",
+      "intro": "Updates and improvements for existing websites.",
+      "introEs": "Mejoras para sitios web existentes.",
+      "rows": [
+        {
+          "name": "Visual redesign",
+          "nameEs": "Rediseño visual",
+          "includes": "New styles / layout, same content",
+          "includesEs": "Nuevos estilos / layout, mismo contenido",
+          "price": "$300 – $700",
+          "time": "3 – 7 days",
+          "timeEs": "3 – 7 días"
+        },
+        {
+          "name": "Responsive fix",
+          "nameEs": "Corrección responsiva",
+          "includes": "Mobile-friendly update for existing site",
+          "includesEs": "Actualización mobile-friendly para sitio existente",
+          "price": "$150 – $350",
+          "time": "1 – 3 days",
+          "timeEs": "1 – 3 días"
+        },
+        {
+          "name": "Content update",
+          "nameEs": "Actualización de contenido",
+          "includes": "Text / image changes, page additions",
+          "includesEs": "Cambios de texto / imagen, adición de páginas",
+          "price": "$80 – $200",
+          "time": "1 – 2 days",
+          "timeEs": "1 – 2 días"
+        },
+        {
+          "name": "Bug fixes",
+          "nameEs": "Corrección de errores",
+          "includes": "Layout issues, broken links, JS errors",
+          "includesEs": "Problemas de layout, links rotos, errores JS",
+          "price": "$50 – $150",
+          "time": "Hours",
+          "timeEs": "Horas"
+        }
+      ]
+    },
+    {
+      "id": "seo",
+      "label": "SEO & Performance",
+      "labelEs": "SEO y Rendimiento",
+      "intro": "Improve your site's visibility and speed.",
+      "introEs": "Mejora la visibilidad y velocidad de tu sitio.",
+      "rows": [
+        {
+          "name": "Basic SEO setup",
+          "nameEs": "SEO básico",
+          "includes": "Meta tags, sitemap, robots.txt, alt text",
+          "includesEs": "Meta tags, sitemap, robots.txt, alt text",
+          "price": "$150 – $300",
+          "time": "1 – 2 days",
+          "timeEs": "1 – 2 días"
+        },
+        {
+          "name": "Speed optimization",
+          "nameEs": "Optimización de velocidad",
+          "includes": "Image compress, caching, code cleanup",
+          "includesEs": "Compresión de imágenes, caché, limpieza de código",
+          "price": "$150 – $350",
+          "time": "1 – 3 days",
+          "timeEs": "1 – 3 días"
+        },
+        {
+          "name": "SEO audit",
+          "nameEs": "Auditoría SEO",
+          "includes": "Report of issues + recommendations",
+          "includesEs": "Reporte de problemas + recomendaciones",
+          "price": "$100 – $200",
+          "time": "1 – 2 days",
+          "timeEs": "1 – 2 días"
+        }
+      ]
+    },
+    {
+      "id": "addons",
+      "label": "Add-ons & Extras",
+      "labelEs": "Extras y Complementos",
+      "intro": "Enhance any plan with these extras.",
+      "introEs": "Complementa cualquier plan con estas opciones.",
+      "rows": [
+        {
+          "name": "Multilingual (i18n)",
+          "nameEs": "Multiidioma (i18n)",
+          "includes": "2–3 languages, content switching",
+          "includesEs": "2–3 idiomas, cambio de contenido",
+          "price": "$200 – $400",
+          "time": "2 – 4 days",
+          "timeEs": "2 – 4 días"
+        },
+        {
+          "name": "Contact form",
+          "nameEs": "Formulario de contacto",
+          "includes": "Functional form with email integration",
+          "includesEs": "Formulario funcional con integración de email",
+          "price": "$80 – $180",
+          "time": "1 day",
+          "timeEs": "1 día"
+        },
+        {
+          "name": "Google Analytics",
+          "nameEs": "Google Analytics",
+          "includes": "GA4 setup + basic event tracking",
+          "includesEs": "Configuración GA4 + seguimiento básico de eventos",
+          "price": "$60 – $120",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "Map integration",
+          "nameEs": "Integración de mapa",
+          "includes": "Embed interactive map (Leaflet / GMaps)",
+          "includesEs": "Mapa interactivo (Leaflet / GMaps)",
+          "price": "$60 – $120",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "WhatsApp button",
+          "nameEs": "Botón de WhatsApp",
+          "includes": "Floating button with custom message",
+          "includesEs": "Botón flotante con mensaje personalizado",
+          "price": "$30 – $60",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "Social media icons",
+          "nameEs": "Iconos de redes sociales",
+          "includes": "Linked icons in header / footer",
+          "includesEs": "Iconos con enlace en header / footer",
+          "price": "$30 – $60",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "Accessibility (WCAG)",
+          "nameEs": "Accesibilidad (WCAG)",
+          "includes": "WCAG 2.1 AA compliance audit + fixes",
+          "includesEs": "Auditoría + correcciones WCAG 2.1 AA",
+          "price": "Quote on req.",
+          "time": "Varies",
+          "timeEs": "Variable"
+        }
+      ]
+    }
+  ]
+}

@@ -84,43 +84,11 @@ const TRANSLATIONS = {
     'cat.hero.h1':    'Our Services',
     'cat.hero.sub':   'Clear plans, no fine print. Pick the one that fits, or tell us your idea and we\'ll build it together.',
     'cat.breadcrumb': 'Services',
-    'cat.tabs.static':   'Static Websites',
-    'cat.tabs.redesign': 'Redesign & Updates',
-    'cat.tabs.seo':      'SEO & Performance',
-    'cat.tabs.addons':   'Add-ons & Extras',
+    /* Table headers — used by js/services.js */
     'cat.th.service':  'Service',
     'cat.th.includes': 'Includes',
     'cat.th.price':    'Price (USD)',
     'cat.th.time':     'Est. Time',
-
-    /* ── SERVICES TABLE CONTENT ── */
-    'cat.static.intro': 'Brand-new websites built from scratch.',
-
-    'cat.s1.name': 'Landing page',        'cat.s1.inc': '1-page, hero + sections + contact form',                         'cat.s1.price': '$300 – $600',    'cat.s1.time': '3 – 5 days',
-    'cat.s2.name': 'Brochure site',       'cat.s2.inc': '3–5 pages, responsive, nav, contact',                             'cat.s2.price': '$500 – $1,000',  'cat.s2.time': '1 – 2 weeks',
-    'cat.s3.name': 'Portfolio site',      'cat.s3.inc': '5–8 pages, gallery, about, contact',                              'cat.s3.price': '$600 – $1,200',  'cat.s3.time': '1 – 2 weeks',
-    'cat.s4.name': 'Restaurant / Local',  'cat.s4.inc': 'Menu, hours, map, reservations link',                             'cat.s4.price': '$500 – $900',    'cat.s4.time': '1 – 2 weeks',
-    'cat.s5.name': 'Blog setup',          'cat.s5.inc': 'Static blog, 5–10 posts, basic SEO',                              'cat.s5.price': '$400 – $800',    'cat.s5.time': '1 week',
-
-    'cat.redesign.intro': 'Updates and improvements for existing websites.',
-    'cat.r1.name': 'Visual redesign',     'cat.r1.inc': 'New styles / layout, same content',                               'cat.r1.price': '$300 – $700',    'cat.r1.time': '3 – 7 days',
-    'cat.r2.name': 'Responsive fix',      'cat.r2.inc': 'Mobile-friendly update for existing site',                        'cat.r2.price': '$150 – $350',    'cat.r2.time': '1 – 3 days',
-    'cat.r3.name': 'Content update',      'cat.r3.inc': 'Text / image changes, page additions',                            'cat.r3.price': '$80 – $200',     'cat.r3.time': '1 – 2 days',
-    'cat.r4.name': 'Bug fixes',           'cat.r4.inc': 'Layout issues, broken links, JS errors',                          'cat.r4.price': '$50 – $150',     'cat.r4.time': 'Hours',
-
-    'cat.seo.intro': 'Improve your site\'s visibility and speed.',
-    'cat.e1.name': 'Basic SEO setup',     'cat.e1.inc': 'Meta tags, sitemap, robots.txt, alt text',                        'cat.e1.price': '$150 – $300',    'cat.e1.time': '1 – 2 days',
-    'cat.e2.name': 'Speed optimization',  'cat.e2.inc': 'Image compress, caching, code cleanup',                           'cat.e2.price': '$150 – $350',    'cat.e2.time': '1 – 3 days',
-    'cat.e3.name': 'SEO audit',           'cat.e3.inc': 'Report of issues + recommendations',                              'cat.e3.price': '$100 – $200',    'cat.e3.time': '1 – 2 days',
-
-    'cat.addons.intro': 'Enhance any plan with these extras.',
-    'cat.a1.name': 'Multilingual (i18n)',  'cat.a1.inc': '2–3 languages, content switching',                               'cat.a1.price': '$200 – $400',    'cat.a1.time': '2 – 4 days',
-    'cat.a2.name': 'Contact form',         'cat.a2.inc': 'Functional form with email integration',                         'cat.a2.price': '$80 – $180',     'cat.a2.time': '1 day',
-    'cat.a3.name': 'Google Analytics',     'cat.a3.inc': 'GA4 setup + basic event tracking',                               'cat.a3.price': '$60 – $120',     'cat.a3.time': 'Hours',
-    'cat.a4.name': 'Map integration',      'cat.a4.inc': 'Embed interactive map (Leaflet / GMaps)',                        'cat.a4.price': '$60 – $120',     'cat.a4.time': 'Hours',
-    'cat.a5.name': 'WhatsApp button',      'cat.a5.inc': 'Floating button with custom message',                            'cat.a5.price': '$30 – $60',      'cat.a5.time': 'Hours',
-    'cat.a6.name': 'Social media icons',   'cat.a6.inc': 'Linked icons in header / footer',                                'cat.a6.price': '$30 – $60',      'cat.a6.time': 'Hours',
-    'cat.a7.name': 'Accessibility (WCAG)', 'cat.a7.inc': 'WCAG 2.1 AA compliance audit + fixes',                          'cat.a7.price': 'Quote on req.',  'cat.a7.time': 'Varies',
 
     /* ── PRICING NOTES ── */
     'cat.notes.label': 'Important',
@@ -329,41 +297,11 @@ const TRANSLATIONS = {
     'cat.hero.h1':    'Nuestros Servicios',
     'cat.hero.sub':   'Planes claros, sin letra pequeña. Elige el que mejor se adapte a tus necesidades o cuéntanos tu idea y lo construimos juntos.',
     'cat.breadcrumb': 'Servicios',
-    'cat.tabs.static':   'Sitios Web',
-    'cat.tabs.redesign': 'Rediseño y Actualizaciones',
-    'cat.tabs.seo':      'SEO y Rendimiento',
-    'cat.tabs.addons':   'Extras y Complementos',
+    /* Table headers — used by js/services.js */
     'cat.th.service':  'Servicio',
     'cat.th.includes': 'Incluye',
     'cat.th.price':    'Precio (USD)',
     'cat.th.time':     'Tiempo',
-
-    'cat.static.intro': 'Sitios web construidos desde cero.',
-    'cat.s1.name': 'Landing page',           'cat.s1.inc': '1 página, hero + secciones + formulario de contacto',               'cat.s1.price': '$300 – $600',    'cat.s1.time': '3 – 5 días',
-    'cat.s2.name': 'Sitio brochure',          'cat.s2.inc': '3–5 páginas, responsivo, nav, contacto',                           'cat.s2.price': '$500 – $1,000',  'cat.s2.time': '1 – 2 semanas',
-    'cat.s3.name': 'Sitio portafolio',        'cat.s3.inc': '5–8 páginas, galería, about, contacto',                            'cat.s3.price': '$600 – $1,200',  'cat.s3.time': '1 – 2 semanas',
-    'cat.s4.name': 'Restaurante / Local',     'cat.s4.inc': 'Menú, horarios, mapa, link de reservaciones',                      'cat.s4.price': '$500 – $900',    'cat.s4.time': '1 – 2 semanas',
-    'cat.s5.name': 'Blog',                    'cat.s5.inc': 'Blog estático, 5–10 posts, SEO básico',                            'cat.s5.price': '$400 – $800',    'cat.s5.time': '1 semana',
-
-    'cat.redesign.intro': 'Mejoras para sitios web existentes.',
-    'cat.r1.name': 'Rediseño visual',         'cat.r1.inc': 'Nuevos estilos / layout, mismo contenido',                        'cat.r1.price': '$300 – $700',    'cat.r1.time': '3 – 7 días',
-    'cat.r2.name': 'Corrección responsiva',   'cat.r2.inc': 'Actualización mobile-friendly para sitio existente',               'cat.r2.price': '$150 – $350',    'cat.r2.time': '1 – 3 días',
-    'cat.r3.name': 'Actualización de contenido','cat.r3.inc': 'Cambios de texto / imagen, adición de páginas',                 'cat.r3.price': '$80 – $200',     'cat.r3.time': '1 – 2 días',
-    'cat.r4.name': 'Corrección de errores',   'cat.r4.inc': 'Problemas de layout, links rotos, errores JS',                    'cat.r4.price': '$50 – $150',     'cat.r4.time': 'Horas',
-
-    'cat.seo.intro': 'Mejora la visibilidad y velocidad de tu sitio.',
-    'cat.e1.name': 'SEO básico',              'cat.e1.inc': 'Meta tags, sitemap, robots.txt, alt text',                        'cat.e1.price': '$150 – $300',    'cat.e1.time': '1 – 2 días',
-    'cat.e2.name': 'Optimización de velocidad','cat.e2.inc': 'Compresión de imágenes, caché, limpieza de código',               'cat.e2.price': '$150 – $350',    'cat.e2.time': '1 – 3 días',
-    'cat.e3.name': 'Auditoría SEO',           'cat.e3.inc': 'Reporte de problemas + recomendaciones',                          'cat.e3.price': '$100 – $200',    'cat.e3.time': '1 – 2 días',
-
-    'cat.addons.intro': 'Complementa cualquier plan con estas opciones.',
-    'cat.a1.name': 'Multiidioma (i18n)',      'cat.a1.inc': '2–3 idiomas, cambio de contenido',                                'cat.a1.price': '$200 – $400',    'cat.a1.time': '2 – 4 días',
-    'cat.a2.name': 'Formulario de contacto',  'cat.a2.inc': 'Formulario funcional con integración de email',                   'cat.a2.price': '$80 – $180',     'cat.a2.time': '1 día',
-    'cat.a3.name': 'Google Analytics',        'cat.a3.inc': 'Configuración GA4 + seguimiento básico de eventos',               'cat.a3.price': '$60 – $120',     'cat.a3.time': 'Horas',
-    'cat.a4.name': 'Integración de mapa',     'cat.a4.inc': 'Mapa interactivo (Leaflet / GMaps)',                               'cat.a4.price': '$60 – $120',     'cat.a4.time': 'Horas',
-    'cat.a5.name': 'Botón de WhatsApp',       'cat.a5.inc': 'Botón flotante con mensaje personalizado',                        'cat.a5.price': '$30 – $60',      'cat.a5.time': 'Horas',
-    'cat.a6.name': 'Iconos de redes sociales','cat.a6.inc': 'Iconos con enlace en header / footer',                            'cat.a6.price': '$30 – $60',      'cat.a6.time': 'Horas',
-    'cat.a7.name': 'Accesibilidad (WCAG)',    'cat.a7.inc': 'Auditoría + correcciones WCAG 2.1 AA',                            'cat.a7.price': 'Cotizar',        'cat.a7.time': 'Variable',
 
     'cat.notes.label': 'Importante',
     'cat.notes.h2':    'Notas sobre Precios',

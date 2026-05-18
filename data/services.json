@@ -46,9 +46,9 @@
         {
           "name": "Blog setup",
           "nameEs": "Blog",
-          "includes": "Static blog, 5–10 posts, basic SEO",
-          "includesEs": "Blog estático, 5–10 posts, SEO básico",
-          "price": "$400 – $800",
+          "includes": "• Home + blog listing page • Post template (reusable) • 5–10 initial posts formatted • On-page SEO + sitemap • GA4 setup",
+          "includesEs": "• Página inicio + lista de blogs • Plantilla de post (reusable) • 5–10 posts iniciales con formato • On-page SEO + sitemap • configuración GA4",
+          "price": "$440– $840",
           "time": "1 week",
           "timeEs": "1 semana"
         }

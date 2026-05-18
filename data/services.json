@@ -66,7 +66,7 @@
           "nameEs": "Rediseño visual",
           "includes": "New styles / layout, same content",
           "includesEs": "Nuevos estilos / layout, mismo contenido",
-          "price": "$300 – $700",
+          "price": "$320 – $720",
           "time": "3 – 7 days",
           "timeEs": "3 – 7 días"
         },
@@ -75,7 +75,7 @@
           "nameEs": "Corrección responsiva",
           "includes": "Mobile-friendly update for existing site",
           "includesEs": "Actualización mobile-friendly para sitio existente",
-          "price": "$150 – $350",
+          "price": "$160 – $360 ",
           "time": "1 – 3 days",
           "timeEs": "1 – 3 días"
         },
@@ -93,7 +93,25 @@
           "nameEs": "Corrección de errores",
           "includes": "Layout issues, broken links, JS errors",
           "includesEs": "Problemas de layout, links rotos, errores JS",
-          "price": "$50 – $150",
+          "price": "$50 – $160",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "Performance Re-Optimization ",
+          "nameEs": "Re-Optimización de rendimiento",
+          "includes": " Audit + image compression + caching + minification",
+          "includesEs": "Auditoría + compresión de imágenes + almacenamiento en caché + minificación",
+          "price": "$120 - $240",
+          "time": "Hours",
+          "timeEs": "Horas"
+        },
+        {
+          "name": "Add new page to existing site",
+          "nameEs": "Añadir nueva página a un sitio existente",
+          "includes": "Matches existing design system; animations billed extra.",
+          "includesEs": "Se adapta al sistema de diseño existente; las animaciones se facturan aparte.",
+          "price": "$120 - $320",
           "time": "Hours",
           "timeEs": "Horas"
         }

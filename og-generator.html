@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>OG Image Generator — NorthClick</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: #1E293B; display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; gap: 20px; font-family: sans-serif; }
+  #preview { width: 1200px; height: 630px; position: relative; overflow: hidden; }
+  button { padding: 12px 28px; background: #2563EB; color: white; border: none; border-radius: 8px; font-size: 1rem; cursor: pointer; font-weight: 700; }
+  p { color: #94a3b8; font-size: 0.85rem; }
+</style>
+</head>
+<body>
+
+<div id="preview">
+  <canvas id="c" width="1200" height="630"></canvas>
+</div>
+
+<button onclick="download()">⬇ Download og-image.png</button>
+<p>Place the downloaded file at: /img/og-image.png</p>
+
+<script>
+const canvas = document.getElementById('c');
+const ctx    = canvas.getContext('2d');
+
+function draw() {
+  const W = 1200, H = 630;
+
+  /* ── Background gradient ── */
+  const bg = ctx.createLinearGradient(0, 0, W, H);
+  bg.addColorStop(0,   '#0F172A');
+  bg.addColorStop(0.6, '#0F1E35');
+  bg.addColorStop(1,   '#0A1628');
+  ctx.fillStyle = bg;
+  ctx.fillRect(0, 0, W, H);
+
+  /* ── Dot grid (subtle) ── */
+  ctx.fillStyle = 'rgba(37,99,235,0.12)';
+  for (let x = 60; x < W; x += 40) {
+    for (let y = 40; y < H; y += 40) {
+      ctx.beginPath();
+      ctx.arc(x, y, 1.5, 0, Math.PI * 2);
+      ctx.fill();
+    }
+  }
+
+  /* ── Blue glow circle (top-right) ── */
+  const glow = ctx.createRadialGradient(W - 100, 80, 0, W - 100, 80, 380);
+  glow.addColorStop(0,   'rgba(37,99,235,0.28)');
+  glow.addColorStop(0.5, 'rgba(37,99,235,0.08)');
+  glow.addColorStop(1,   'rgba(37,99,235,0)');
+  ctx.fillStyle = glow;
+  ctx.fillRect(0, 0, W, H);
+
+  /* ── Left blue accent bar ── */
+  const bar = ctx.createLinearGradient(0, 0, 0, H);
+  bar.addColorStop(0,   '#3B82F6');
+  bar.addColorStop(0.5, '#2563EB');
+  bar.addColorStop(1,   '#1D4ED8');
+  ctx.fillStyle = bar;
+  ctx.fillRect(0, 0, 7, H);
+
+  /* ── Logo: "North" ── */
+  ctx.font = '700 78px Inter, system-ui, sans-serif';
+  ctx.fillStyle = '#F8FAFC';
+  ctx.textBaseline = 'alphabetic';
+  ctx.fillText('North', 80, 280);
+
+  /* ── Logo: "Click" (blue) ── */
+  const northWidth = ctx.measureText('North').width;
+  ctx.fillStyle = '#3B82F6';
+  ctx.fillText('Click', 80 + northWidth, 280);
+
+  /* ── Divider line ── */
+  ctx.strokeStyle = 'rgba(37,99,235,0.5)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(80, 304);
+  ctx.lineTo(80 + northWidth + ctx.measureText('Click').width, 304);
+  ctx.stroke();
+
+  /* ── Tagline ── */
+  ctx.font = '400 32px Inter, system-ui, sans-serif';
+  ctx.fillStyle = '#94A3B8';
+  ctx.fillText('Professional Web Design', 80, 358);
+
+  /* ── URL badge ── */
+  const badgeX = 80, badgeY = 420, badgeW = 236, badgeH = 44, badgeR = 22;
+  ctx.beginPath();
+  ctx.moveTo(badgeX + badgeR, badgeY);
+  ctx.lineTo(badgeX + badgeW - badgeR, badgeY);
+  ctx.quadraticCurveTo(badgeX + badgeW, badgeY, badgeX + badgeW, badgeY + badgeR);
+  ctx.lineTo(badgeX + badgeW, badgeY + badgeH - badgeR);
+  ctx.quadraticCurveTo(badgeX + badgeW, badgeY + badgeH, badgeX + badgeW - badgeR, badgeY + badgeH);
+  ctx.lineTo(badgeX + badgeR, badgeY + badgeH);
+  ctx.quadraticCurveTo(badgeX, badgeY + badgeH, badgeX, badgeY + badgeH - badgeR);
+  ctx.lineTo(badgeX, badgeY + badgeR);
+  ctx.quadraticCurveTo(badgeX, badgeY, badgeX + badgeR, badgeY);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(37,99,235,0.18)';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(59,130,246,0.5)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  ctx.font = '500 18px Inter, system-ui, sans-serif';
+  ctx.fillStyle = '#93C5FD';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('northclick.net', badgeX + 26, badgeY + badgeH / 2);
+
+  /* ── Right side decorative card ── */
+  const cardX = 760, cardY = 160, cardW = 360, cardH = 310, cardR = 16;
+  ctx.beginPath();
+  ctx.moveTo(cardX + cardR, cardY);
+  ctx.lineTo(cardX + cardW - cardR, cardY);
+  ctx.quadraticCurveTo(cardX + cardW, cardY, cardX + cardW, cardY + cardR);
+  ctx.lineTo(cardX + cardW, cardY + cardH - cardR);
+  ctx.quadraticCurveTo(cardX + cardW, cardY + cardH, cardX + cardW - cardR, cardY + cardH);
+  ctx.lineTo(cardX + cardR, cardY + cardH);
+  ctx.quadraticCurveTo(cardX, cardY + cardH, cardX, cardY + cardH - cardR);
+  ctx.lineTo(cardX, cardY + cardR);
+  ctx.quadraticCurveTo(cardX, cardY, cardX + cardR, cardY);
+  ctx.closePath();
+  ctx.fillStyle = 'rgba(255,255,255,0.04)';
+  ctx.fill();
+  ctx.strokeStyle = 'rgba(255,255,255,0.10)';
+  ctx.lineWidth = 1;
+  ctx.stroke();
+
+  /* card header bar */
+  ctx.fillStyle = 'rgba(37,99,235,0.35)';
+  ctx.beginPath();
+  ctx.moveTo(cardX + cardR, cardY);
+  ctx.lineTo(cardX + cardW - cardR, cardY);
+  ctx.quadraticCurveTo(cardX + cardW, cardY, cardX + cardW, cardY + cardR);
+  ctx.lineTo(cardX + cardW, cardY + 48);
+  ctx.lineTo(cardX, cardY + 48);
+  ctx.lineTo(cardX, cardY + cardR);
+  ctx.quadraticCurveTo(cardX, cardY, cardX + cardR, cardY);
+  ctx.closePath();
+  ctx.fill();
+
+  /* card dots */
+  ['#EF4444','#F59E0B','#22C55E'].forEach((col, i) => {
+    ctx.beginPath();
+    ctx.arc(cardX + 22 + i * 22, cardY + 24, 7, 0, Math.PI * 2);
+    ctx.fillStyle = col;
+    ctx.fill();
+  });
+
+  /* card title */
+  ctx.font = '500 14px Inter, monospace, sans-serif';
+  ctx.fillStyle = 'rgba(255,255,255,0.6)';
+  ctx.textBaseline = 'middle';
+  ctx.fillText('index.html', cardX + 100, cardY + 24);
+
+  /* code lines */
+  const lines = [
+    { indent: 0,  color: '#64748B', text: '<!-- NorthClick -->' },
+    { indent: 0,  color: '#7C3AED', text: '<section class="hero">' },
+    { indent: 20, color: '#2563EB', text: '<h1>' },
+    { indent: 40, color: '#F8FAFC', text: 'Boost your business' },
+    { indent: 40, color: '#22C55E', text: 'in the digital world' },
+    { indent: 20, color: '#2563EB', text: '</h1>' },
+    { indent: 20, color: '#F59E0B', text: '<a href="contact.html"' },
+    { indent: 36, color: '#94A3B8', text: 'class="btn btn-primary">' },
+    { indent: 20, color: '#F8FAFC', text: 'Start a project</a>' },
+    { indent: 0,  color: '#7C3AED', text: '</section>' },
+  ];
+
+  ctx.font = '500 13px "Courier New", monospace';
+  ctx.textBaseline = 'alphabetic';
+  lines.forEach((line, i) => {
+    ctx.fillStyle = line.color;
+    ctx.fillText(line.text, cardX + 24 + line.indent, cardY + 80 + i * 22);
+  });
+}
+
+function download() {
+  draw();
+  canvas.toBlob(blob => {
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'og-image.png';
+    a.click();
+  }, 'image/png');
+}
+
+draw();
+</script>
+</body>
+</html>

@@ -46,42 +46,68 @@
     });
   }
 
+  /* ── Build a single table (shared helper) ── */
+  function buildTable(rows, withUnit) {
+    const thService  = t('cat.th.service')  || 'Service';
+    const thIncludes = t('cat.th.includes') || 'Includes';
+    const thPrice    = t('cat.th.price')    || 'Price (USD)';
+    const thTime     = t('cat.th.time')     || 'Est. Time';
+    const thUnit     = t('cat.th.unit')     || 'Unit';
+
+    const unitHeader = withUnit ? `<th>${thUnit}</th>` : '';
+    const bodyRows = rows.map(row => {
+      const unitCell = withUnit ? `<td>${pick(row.unit, row.unitEs) || ''}</td>` : '';
+      return `<tr>
+        <td>${pick(row.name, row.nameEs)}</td>
+        <td>${pick(row.includes, row.includesEs)}</td>
+        <td>${row.price}</td>
+        <td>${pick(row.time, row.timeEs)}</td>
+        ${unitCell}
+      </tr>`;
+    }).join('');
+
+    return `
+      <div class="svc-table-wrap">
+        <table class="svc-table">
+          <thead>
+            <tr>
+              <th>${thService}</th>
+              <th>${thIncludes}</th>
+              <th>${thPrice}</th>
+              <th>${thTime}</th>
+              ${unitHeader}
+            </tr>
+          </thead>
+          <tbody>${bodyRows}</tbody>
+        </table>
+      </div>`;
+  }
+
   /* ── Render panels ── */
   function renderPanels() {
     const el = document.getElementById('cat-panels');
     if (!el || !data) return;
 
-    const thService  = t('cat.th.service')  || 'Service';
-    const thIncludes = t('cat.th.includes') || 'Includes';
-    const thPrice    = t('cat.th.price')    || 'Price (USD)';
-    const thTime     = t('cat.th.time')     || 'Est. Time';
-
     el.innerHTML = data.tabs.map((tab, i) => {
-      const intro = pick(tab.intro, tab.introEs);
-      const rows  = tab.rows.map(row => `
-        <tr>
-          <td>${pick(row.name, row.nameEs)}</td>
-          <td>${pick(row.includes, row.includesEs)}</td>
-          <td>${row.price}</td>
-          <td>${pick(row.time, row.timeEs)}</td>
-        </tr>`).join('');
+      const intro   = pick(tab.intro, tab.introEs);
+      const isFirst = i === 0;
+
+      let content;
+      if (tab.type === 'grouped' && Array.isArray(tab.groups)) {
+        /* grouped tab: one sub-table per group */
+        content = tab.groups.map(g => `
+          <h4 class="svc-group-title">${pick(g.name, g.nameEs)}</h4>
+          ${buildTable(g.rows, true)}`
+        ).join('');
+      } else {
+        /* standard tab: single table */
+        content = buildTable(tab.rows || [], false);
+      }
 
       return `
-        <div class="cat-panel${i === 0 ? ' active' : ''} reveal" id="panel-${tab.id}">
+        <div class="cat-panel${isFirst ? ' active' : ''} reveal" id="panel-${tab.id}">
           <p class="svc-table-intro">${intro}</p>
-          <div class="svc-table-wrap">
-            <table class="svc-table">
-              <thead>
-                <tr>
-                  <th>${thService}</th>
-                  <th>${thIncludes}</th>
-                  <th>${thPrice}</th>
-                  <th>${thTime}</th>
-                </tr>
-              </thead>
-              <tbody>${rows}</tbody>
-            </table>
-          </div>
+          ${content}
         </div>`;
     }).join('');
   }

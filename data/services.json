@@ -172,6 +172,70 @@
       ]
     },
     {
+      "id": "components",
+      "label": "À la carte",
+      "labelEs": "Por componente",
+      "intro": "Individual building blocks billed separately. Base rate: $40/hr. Lower range = client supplies design file; upper range = designed from scratch.",
+      "introEs": "Componentes individuales cotizados por separado. Tarifa base: $40/hr. Rango inferior = cliente provee archivo de diseño; rango superior = diseño desde cero.",
+      "type": "grouped",
+      "groups": [
+        {
+          "name": "Design & Layout",
+          "nameEs": "Diseño y Layout",
+          "rows": [
+            { "name": "Static HTML/CSS page", "nameEs": "Página HTML/CSS estática", "includes": "Responsive, cross-browser; client provides copy & images", "includesEs": "Responsiva, cross-browser; el cliente provee textos e imágenes", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "Per page", "unitEs": "Por página" },
+            { "name": "Animated / interactive page", "nameEs": "Página animada / interactiva", "includes": "CSS/JS transitions, scroll effects, micro-interactions", "includesEs": "Transiciones CSS/JS, efectos de scroll, micro-interacciones", "price": "$200 – $400", "time": "5 – 10 hrs", "timeEs": "5 – 10 hrs", "unit": "Per page", "unitEs": "Por página" },
+            { "name": "Hero section", "nameEs": "Sección hero", "includes": "Headline, CTA, background treatment", "includesEs": "Titular, CTA, tratamiento de fondo", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Navigation bar (responsive)", "nameEs": "Barra de navegación (responsiva)", "includes": "Mobile hamburger menu included", "includesEs": "Menú hamburguesa móvil incluido", "price": "$80 – $120", "time": "2 – 3 hrs", "timeEs": "2 – 3 hrs", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Footer", "nameEs": "Footer", "includes": "Links, socials, legal text", "includesEs": "Links, redes sociales, texto legal", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Content section (text + image)", "nameEs": "Sección de contenido (texto + imagen)", "includes": "Reusable layout block", "includesEs": "Bloque de layout reutilizable", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per section", "unitEs": "Por sección" },
+            { "name": "Gallery / portfolio grid", "nameEs": "Galería / cuadrícula de portafolio", "includes": "Lightbox optional (+1 hr)", "includesEs": "Lightbox opcional (+1 hr)", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Pricing / feature table", "nameEs": "Tabla de precios / características", "includes": "Static; no backend logic", "includesEs": "Estática; sin lógica de backend", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Custom illustration / SVG", "nameEs": "Ilustración personalizada / SVG", "includes": "Original vector artwork; complexity varies", "includesEs": "Arte vectorial original; complejidad variable", "price": "$80 – $240", "time": "2 – 6 hrs", "timeEs": "2 – 6 hrs", "unit": "Per asset", "unitEs": "Por asset" },
+            { "name": "CSS animation (Lottie / keyframe)", "nameEs": "Animación CSS (Lottie / keyframe)", "includes": "Loading, hover, scroll-triggered", "includesEs": "Carga, hover, activada por scroll", "price": "$80 – $200", "time": "2 – 5 hrs", "timeEs": "2 – 5 hrs", "unit": "Per animation", "unitEs": "Por animación" },
+            { "name": "Accordion / FAQ section", "nameEs": "Sección acordeón / FAQ", "includes": "CSS/JS toggle, accessible markup", "includesEs": "Alternancia CSS/JS, marcado accesible", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per unit", "unitEs": "Por unidad" }
+          ]
+        },
+        {
+          "name": "Functionality & Integrations",
+          "nameEs": "Funcionalidad e Integraciones",
+          "rows": [
+            { "name": "Contact form", "nameEs": "Formulario de contacto", "includes": "Formspree / EmailJS; no backend required", "includesEs": "Formspree / EmailJS; sin backend", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "Per form", "unitEs": "Por formulario" },
+            { "name": "Google Analytics GA4", "nameEs": "Google Analytics GA4", "includes": "Events & conversion tracking setup", "includesEs": "Configuración de eventos y seguimiento de conversiones", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "One-time", "unitEs": "Único" },
+            { "name": "Interactive map embed", "nameEs": "Mapa interactivo", "includes": "Leaflet or Google Maps embed", "includesEs": "Integración con Leaflet o Google Maps", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per map", "unitEs": "Por mapa" },
+            { "name": "WhatsApp floating button", "nameEs": "Botón flotante de WhatsApp", "includes": "Custom message preset", "includesEs": "Mensaje personalizado predefinido", "price": "$20 – $40", "time": "0.5 – 1 hr", "timeEs": "0.5 – 1 hr", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Social media icon links", "nameEs": "Iconos de redes sociales", "includes": "Header and/or footer placement", "includesEs": "Colocación en header y/o footer", "price": "$20 – $40", "time": "0.5 – 1 hr", "timeEs": "0.5 – 1 hr", "unit": "Per set", "unitEs": "Por set" },
+            { "name": "Cookie consent banner", "nameEs": "Banner de consentimiento de cookies", "includes": "GDPR-compliant; no external CMP needed", "includesEs": "Cumple GDPR; sin CMP externo", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "One-time", "unitEs": "Único" },
+            { "name": "Scroll-to-top button", "nameEs": "Botón de regreso al inicio", "includes": "Smooth scroll with fade-in", "includesEs": "Scroll suave con animación de aparición", "price": "$20", "time": "0.5 hr", "timeEs": "0.5 hr", "unit": "Per unit", "unitEs": "Por unidad" },
+            { "name": "Image slider / carousel", "nameEs": "Slider / carrusel de imágenes", "includes": "Swiper.js or CSS-only", "includesEs": "Swiper.js o CSS puro", "price": "$80 – $120", "time": "2 – 3 hrs", "timeEs": "2 – 3 hrs", "unit": "Per unit", "unitEs": "Por unidad" }
+          ]
+        },
+        {
+          "name": "SEO, Performance & Accessibility",
+          "nameEs": "SEO, Rendimiento y Accesibilidad",
+          "rows": [
+            { "name": "Basic on-page SEO", "nameEs": "SEO en página básico", "includes": "Meta tags, Open Graph, alt text, robots.txt, sitemap.xml", "includesEs": "Meta tags, Open Graph, alt text, robots.txt, sitemap.xml", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "Per site", "unitEs": "Por sitio" },
+            { "name": "Technical SEO audit", "nameEs": "Auditoría SEO técnica", "includes": "Issues list + fix recommendations", "includesEs": "Lista de problemas + recomendaciones", "price": "$80 – $160", "time": "2 – 4 hrs", "timeEs": "2 – 4 hrs", "unit": "One-time", "unitEs": "Único" },
+            { "name": "Performance optimization", "nameEs": "Optimización de rendimiento", "includes": "Image compression, lazy load, caching headers, minification", "includesEs": "Compresión de imágenes, lazy load, headers de caché, minificación", "price": "$120 – $240", "time": "3 – 6 hrs", "timeEs": "3 – 6 hrs", "unit": "Per site", "unitEs": "Por sitio" },
+            { "name": "WCAG 2.1 AA audit + fixes", "nameEs": "Auditoría + correcciones WCAG 2.1 AA", "includes": "Keyboard nav, color contrast, ARIA labels", "includesEs": "Navegación con teclado, contraste de color, etiquetas ARIA", "price": "$160 – $320", "time": "4 – 8 hrs", "timeEs": "4 – 8 hrs", "unit": "Per site", "unitEs": "Por sitio" },
+            { "name": "Schema markup (JSON-LD)", "nameEs": "Schema markup (JSON-LD)", "includes": "Local Business, FAQPage, etc.", "includesEs": "Local Business, FAQPage, etc.", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per type", "unitEs": "Por tipo" }
+          ]
+        },
+        {
+          "name": "Internationalization & Extras",
+          "nameEs": "Internacionalización y Extras",
+          "rows": [
+            { "name": "Multilingual setup (i18n)", "nameEs": "Configuración multiidioma (i18n)", "includes": "JS-based switcher, 2–3 languages, no CMS required", "includesEs": "Selector JS, 2–3 idiomas, sin CMS requerido", "price": "$200 – $400", "time": "5 – 10 hrs", "timeEs": "5 – 10 hrs", "unit": "2–3 langs", "unitEs": "2–3 idiomas" },
+            { "name": "Static blog setup", "nameEs": "Blog estático", "includes": "Pre-rendered, basic SEO structure, up to 10 posts", "includesEs": "Pre-renderizado, estructura SEO básica, hasta 10 posts", "price": "$200 – $320", "time": "5 – 8 hrs", "timeEs": "5 – 8 hrs", "unit": "Up to 10 posts", "unitEs": "Hasta 10 posts" },
+            { "name": "Dark / light mode toggle", "nameEs": "Modo oscuro / claro", "includes": "CSS variables + localStorage preference", "includesEs": "Variables CSS + preferencia en localStorage", "price": "$80 – $120", "time": "2 – 3 hrs", "timeEs": "2 – 3 hrs", "unit": "Per site", "unitEs": "Por sitio" },
+            { "name": "Favicon + social preview images", "nameEs": "Favicon + imágenes para redes sociales", "includes": "Multi-size favicon, Open Graph image", "includesEs": "Favicon multi-tamaño, imagen Open Graph", "price": "$20 – $40", "time": "0.5 – 1 hr", "timeEs": "0.5 – 1 hr", "unit": "Per set", "unitEs": "Por set" },
+            { "name": "404 / error page", "nameEs": "Página 404 / error", "includes": "On-brand; links back to key pages", "includesEs": "Diseño alineado a la marca; enlaza a páginas clave", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "Per page", "unitEs": "Por página" },
+            { "name": "Deployment & domain setup", "nameEs": "Despliegue y configuración de dominio", "includes": "Netlify / Vercel / cPanel. DNS not included.", "includesEs": "Netlify / Vercel / cPanel. DNS no incluido.", "price": "$40 – $80", "time": "1 – 2 hrs", "timeEs": "1 – 2 hrs", "unit": "One-time", "unitEs": "Único" }
+          ]
+        }
+      ]
+    },
+    {
       "id": "addons",
       "label": "Add-ons & Extras",
       "labelEs": "Extras y Complementos",

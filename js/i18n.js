@@ -89,6 +89,7 @@ const TRANSLATIONS = {
     'cat.th.includes': 'Includes',
     'cat.th.price':    'Price (USD)',
     'cat.th.time':     'Est. Time',
+    'cat.th.unit':     'Unit',
 
     /* ── PRICING NOTES ── */
     'cat.notes.label': 'Important',
@@ -99,6 +100,24 @@ const TRANSLATIONS = {
     'cat.notes.n4':    'All sites are built mobile-responsive and cross-browser compatible unless otherwise agreed.',
     'cat.notes.n5':    'Prices do <strong>not</strong> include copywriting, photography, or stock image licensing.',
     'cat.notes.n6':    'Web accessibility (WCAG 2.1 AA) available as an add-on — $160–$320, see the SEO &amp; Performance tab.',
+
+    /* ── FUTURE SERVICES ── */
+    'cat.future.label':    'On the roadmap',
+    'cat.future.h2':       'Coming <span style="color:var(--blue)">soon</span>',
+    'cat.future.sub':      'Services we\'re building toward as the team grows. Indicative prices for planning purposes only.',
+    'cat.future.badge':    'Coming soon',
+    'cat.future.s1.name':  'E-commerce',
+    'cat.future.s1.desc':  'Shopify or WooCommerce store with product catalog, cart, and payment gateway integration.',
+    'cat.future.s1.price': '~$2,000 – $6,000+',
+    'cat.future.s2.name':  'Custom Web App',
+    'cat.future.s2.desc':  'React / Vue SPA with API integrations, user authentication, and dynamic data.',
+    'cat.future.s2.price': '~$4,000 – $15,000+',
+    'cat.future.s3.name':  'CMS Integration',
+    'cat.future.s3.desc':  'Headless or theme-based CMS setup — WordPress, Sanity, or equivalent.',
+    'cat.future.s3.price': '~$800 – $2,000',
+    'cat.future.s4.name':  'Maintenance Retainer',
+    'cat.future.s4.desc':  'Monthly updates, security monitoring, and minor fixes on a recurring basis.',
+    'cat.future.s4.price': '~$200 – $500 / mo',
 
     /* ── TERMS OF SERVICE ── */
     'cat.tos.label': 'Legal',
@@ -302,6 +321,7 @@ const TRANSLATIONS = {
     'cat.th.includes': 'Incluye',
     'cat.th.price':    'Precio (USD)',
     'cat.th.time':     'Tiempo',
+    'cat.th.unit':     'Unidad',
 
     'cat.notes.label': 'Importante',
     'cat.notes.h2':    'Notas sobre Precios',
@@ -311,6 +331,24 @@ const TRANSLATIONS = {
     'cat.notes.n4':    'Todos los sitios se construyen responsivos y compatibles con múltiples navegadores, salvo acuerdo contrario.',
     'cat.notes.n5':    'Los precios <strong>no</strong> incluyen redacción, fotografía ni licencias de imágenes de stock.',
     'cat.notes.n6':    'Accesibilidad web (WCAG 2.1 AA) disponible como complemento — $160–$320, ver pestaña SEO y Rendimiento.',
+
+    /* ── FUTURE SERVICES ── */
+    'cat.future.label':    'En el roadmap',
+    'cat.future.h2':       'Próximamente <span style="color:var(--blue)">disponible</span>',
+    'cat.future.sub':      'Servicios que estamos desarrollando conforme el equipo crece. Precios indicativos para planificación.',
+    'cat.future.badge':    'Próximamente',
+    'cat.future.s1.name':  'E-commerce',
+    'cat.future.s1.desc':  'Tienda en Shopify o WooCommerce con catálogo de productos, carrito e integración de pasarela de pagos.',
+    'cat.future.s1.price': '~$2,000 – $6,000+',
+    'cat.future.s2.name':  'Aplicación Web a Medida',
+    'cat.future.s2.desc':  'SPA en React / Vue con integraciones de API, autenticación de usuarios y datos dinámicos.',
+    'cat.future.s2.price': '~$4,000 – $15,000+',
+    'cat.future.s3.name':  'Integración de CMS',
+    'cat.future.s3.desc':  'Configuración de CMS headless o basado en tema — WordPress, Sanity o equivalente.',
+    'cat.future.s3.price': '~$800 – $2,000',
+    'cat.future.s4.name':  'Mantenimiento Mensual',
+    'cat.future.s4.desc':  'Actualizaciones, monitoreo de seguridad y correcciones menores de forma recurrente.',
+    'cat.future.s4.price': '~$200 – $500 / mes',
 
     'cat.tos.label': 'Legal',
     'cat.tos.h2':    'Términos de Servicio',

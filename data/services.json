@@ -12,7 +12,7 @@
           "nameEs": "Landing page",
           "includes": "• Responsive static or animated page • Hero section • 3 content sections (text + image) • Contact form with email integration • Basic on-page SEO (meta, OG, sitemap)  • GA4 setup  • Navigation bar + footer  • Favicon + social preview  ",
           "includesEs": "• Página responsiva estática o animada  •  Sección Hero  •  3 secciones de contenido (texto + imagen)  •  Formulario de contacto con integración email  •  On-page SEO básico (meta, OG, sitemap)  •  GA4 setup  •  Barra de navegación + footer  •  Favicon + social preview",
-          "price": "$620 – $1200",
+          "price": "$620 – $1,200",
           "time": "3 – 5 days",
           "timeEs": "3 – 5 días"
         },
@@ -28,9 +28,9 @@
         {
           "name": "Portfolio site",
           "nameEs": "Sitio portafolio",
-          "includes": "5–8 pages, gallery, about, contact",
-          "includesEs": "5–8 páginas, galería, about, contacto",
-          "price": "$1040 – $2000",
+          "includes": "• 5–8 pages (static + animated)  • Gallery / project grid with lightbox  • About, services, contact pages  • Contact form  • On-page SEO + sitemap  • GA4 + basic event tracking  • Performance optimization  • Dark/light mode toggle (optional)",
+          "includesEs": "• 5–8 páginas (estáticas + animadas)  • Gallería /  Cuadrícula de proyecto con lightbox  • Páginas: sobre nosotros, servicios, contacto  • Formulario de contacto conectado a email  • On-page SEO + sitemap  • GA4 + Seguimiento básico de eventos • Optimización de rendimiento  • Cambio Dark/light mode  (opcional)",
+          "price": "$1,040 – $2,000",
           "time": "1 – 2 weeks",
           "timeEs": "1 – 2 semanas"
         },

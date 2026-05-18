@@ -179,12 +179,13 @@ function draw() {
 
 function download() {
   draw();
+  /* JPEG quality 0.88 keeps it under 150 KB — required by WhatsApp / Facebook */
   canvas.toBlob(blob => {
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = 'og-image.png';
+    a.download = 'og-image.jpg';
     a.click();
-  }, 'image/png');
+  }, 'image/jpeg', 0.88);
 }
 
 draw();

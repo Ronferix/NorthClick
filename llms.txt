@@ -1,0 +1,59 @@
+# NorthClick
+
+> Professional web design and development agency. We build fast, modern, and affordable websites for businesses worldwide.
+
+NorthClick designs and develops professional websites — from single-page landing pages to full multi-page sites. We serve small and medium businesses that need a serious online presence without enterprise-level prices. Response time under 24 hours. Bilingual service (English / Spanish).
+
+## Pages
+
+- [Home](https://www.northclick.net/): Overview of services, value proposition, testimonials, and how to get started.
+- [Services & Pricing](https://www.northclick.net/services.html): Full pricing for all services — landing pages, professional sites, redesigns, SEO, and à la carte add-ons. Includes terms of service.
+- [Our Work](https://www.northclick.net/work.html): Portfolio of completed client projects with live links.
+- [Contact](https://www.northclick.net/contact.html): Contact form to start a project. Free, no-commitment consultation.
+
+## Services & Pricing
+
+### Landing Page
+Single-page conversion-focused website. Includes responsive design, animations, contact form, basic SEO.
+- Price: $320 – $800 USD
+- Timeline: 5–10 business days
+
+### Professional Website
+Multi-page website (up to 5 pages). Custom design, responsive, contact form, SEO setup, Google Analytics.
+- Price: $640 – $1,800 USD
+- Timeline: 2–4 weeks
+
+### Website Redesign
+Full visual and technical overhaul of an existing website. Modern layout, improved UX, mobile-first.
+- Price: $400 – $1,600 USD
+- Timeline: 1–3 weeks
+
+### SEO Optimization
+On-page SEO audit and implementation. Meta tags, structured data (JSON-LD), page speed, sitemap, robots.txt.
+- Price: $150 – $600 USD
+- Timeline: 3–7 business days
+
+### Add-ons (à la carte)
+- WhatsApp chat button: $30
+- Cookie consent banner: $40
+- Blog setup (static): $120 – $250
+- Google Analytics setup: $50
+- Multilingual (EN/ES): $150 – $400
+- Additional page: $80 – $200
+- Performance optimization: $100 – $300
+- Hourly rate: $40/hr
+
+## Terms
+
+- Payment: 50% upfront, 50% on delivery
+- Revisions: 2 rounds included; extra rounds at $40/hr
+- Rights: Full ownership transferred to client on final payment
+- Hosting: Not included — client provides domain and hosting
+- Payment methods: Bank transfer, PayPal, Stripe
+
+## Contact
+
+- Email: hello@northclick.net
+- Phone / WhatsApp: +52 1 33 1513 7612
+- WhatsApp link: https://wa.me/5213315137612
+- Website: https://www.northclick.net

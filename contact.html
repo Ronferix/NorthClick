@@ -26,6 +26,29 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <!-- ===== STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "@id": "https://www.northclick.net/contact.html#webpage",
+        "url": "https://www.northclick.net/contact.html",
+        "name": "Contact — NorthClick",
+        "description": "Have a project in mind? Tell us about it. Free, no-commitment consultation — we get back to you in under 24 hours.",
+        "isPartOf": { "@id": "https://www.northclick.net/#website" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home",    "item": "https://www.northclick.net/" },
+            { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.northclick.net/contact.html" }
+          ]
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

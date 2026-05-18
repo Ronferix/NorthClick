@@ -26,6 +26,139 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
+  <!-- ===== STRUCTURED DATA ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://www.northclick.net/services.html#webpage",
+        "url": "https://www.northclick.net/services.html",
+        "name": "Services & Pricing — NorthClick",
+        "description": "Clear pricing for web design, redesigns, SEO and add-ons. No fine print — just honest rates and professional work.",
+        "isPartOf": { "@id": "https://www.northclick.net/#website" },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home",     "item": "https://www.northclick.net/" },
+            { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.northclick.net/services.html" }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Landing Page",
+        "provider": { "@id": "https://www.northclick.net/#organization" },
+        "description": "Single-page website optimised for conversions. Ideal for campaigns, product launches, or businesses that need a fast, focused online presence.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "320",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "320",
+            "maxPrice": "800",
+            "priceCurrency": "USD"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Professional Website",
+        "provider": { "@id": "https://www.northclick.net/#organization" },
+        "description": "Multi-page professional website with custom design, responsive layout, contact form, and SEO setup. Perfect for businesses that need a full online presence.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "640",
+            "maxPrice": "1800",
+            "priceCurrency": "USD"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "Website Redesign",
+        "provider": { "@id": "https://www.northclick.net/#organization" },
+        "description": "Full redesign of an existing website. Modern layout, improved UX, mobile-responsive, and updated content structure.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "400",
+            "maxPrice": "1600",
+            "priceCurrency": "USD"
+          }
+        }
+      },
+      {
+        "@type": "Service",
+        "name": "SEO Optimization",
+        "provider": { "@id": "https://www.northclick.net/#organization" },
+        "description": "On-page SEO audit and optimization. Meta tags, structured data, page speed, sitemap, and keyword strategy.",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "priceSpecification": {
+            "@type": "PriceSpecification",
+            "minPrice": "150",
+            "maxPrice": "600",
+            "priceCurrency": "USD"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a website cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A landing page starts at $320 USD. A professional multi-page website starts at $640 USD. Pricing depends on design complexity and features required. All prices include mobile-responsive design and basic SEO setup."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to build a website?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A landing page typically takes 5–10 business days. A professional site takes 2–4 weeks. Timeline depends on client feedback speed and project complexity."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is included in the price?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "All projects include responsive design, cross-browser testing, basic on-page SEO, a contact form, and up to 2 rounds of revisions. Hosting and domain are not included."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What payment methods do you accept?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We accept bank transfer (ACH/wire), PayPal, and Stripe (credit/debit card). Payment is 50% upfront and 50% on delivery."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer ongoing maintenance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, maintenance is available at $40/hr or as a monthly retainer. Contact us for details."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 

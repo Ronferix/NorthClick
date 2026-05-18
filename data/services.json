@@ -10,18 +10,18 @@
         {
           "name": "Landing page",
           "nameEs": "Landing page",
-          "includes": "1-page, hero + sections + contact form",
-          "includesEs": "1 página, hero + secciones + formulario de contacto",
-          "price": "$320 – $640",
+          "includes": "• Responsive static or animated page • Hero section • 3 content sections (text + image) • Contact form with email integration • Basic on-page SEO (meta, OG, sitemap)  • GA4 setup  • Navigation bar + footer  • Favicon + social preview  ",
+          "includesEs": "• Página responsiva estática o animada  •  Sección Hero  •  3 secciones de contenido (texto + imagen)  •  Formulario de contacto con integración email  •  On-page SEO básico (meta, OG, sitemap)  •  GA4 setup  •  Barra de navegación + footer  •  Favicon + social preview",
+          "price": "$620 – $1200",
           "time": "3 – 5 days",
           "timeEs": "3 – 5 días"
         },
         {
           "name": "Brochure site",
           "nameEs": "Sitio brochure",
-          "includes": "3–5 pages, responsive, nav, contact",
-          "includesEs": "3–5 páginas, responsivo, nav, contacto",
-          "price": "$500 – $1,000",
+          "includes": "• 3–5 static / lightly animated pages  • Hero + 3 content sections per page  • Responsive navigation + footer  • Contact form with email  • Basic on-page SEO + sitemap  • GA4 setup  • Performance optimization  Note: Price reflects 3 pages at lower end, 5 fully-designed pages at upper end.",
+          "includesEs": "• 3–5 páginas estáticas / ligeramente animadas  • Hero + 3 secciones de contenido por página  • Navegación responsiva + footer  • Formulario de contacto conectado a email  • On-page SEO básico + sitemap  • GA4 setup  • Optimización de rendimiento  Note: El precio representa 3 páginas en el costo mínimo, 5 páginas completamente diseñadas en el costo máximo.",
+          "price": "$800 – $1,880",
           "time": "1 – 2 weeks",
           "timeEs": "1 – 2 semanas"
         },
@@ -30,7 +30,7 @@
           "nameEs": "Sitio portafolio",
           "includes": "5–8 pages, gallery, about, contact",
           "includesEs": "5–8 páginas, galería, about, contacto",
-          "price": "$600 – $1,200",
+          "price": "$1040 – $2000",
           "time": "1 – 2 weeks",
           "timeEs": "1 – 2 semanas"
         },

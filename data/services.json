@@ -129,16 +129,16 @@
           "nameEs": "SEO básico",
           "includes": "Meta tags, sitemap, robots.txt, alt text",
           "includesEs": "Meta tags, sitemap, robots.txt, alt text",
-          "price": "$150 – $300",
+          "price": "$80– $160",
           "time": "1 – 2 days",
           "timeEs": "1 – 2 días"
         },
         {
-          "name": "Speed optimization",
-          "nameEs": "Optimización de velocidad",
+          "name": "Performance optimization",
+          "nameEs": "Optimización de rendimiento",
           "includes": "Image compress, caching, code cleanup",
           "includesEs": "Compresión de imágenes, caché, limpieza de código",
-          "price": "$150 – $350",
+          "price": "$120 – $240",
           "time": "1 – 3 days",
           "timeEs": "1 – 3 días"
         },
@@ -147,9 +147,27 @@
           "nameEs": "Auditoría SEO",
           "includes": "Report of issues + recommendations",
           "includesEs": "Reporte de problemas + recomendaciones",
-          "price": "$100 – $200",
+          "price": "$80– $160",
           "time": "1 – 2 days",
           "timeEs": "1 – 2 días"
+        },
+        {
+          "name": "WCAG 2.1 AA audit + fixes",
+          "nameEs": "WCAG 2.1 AA auditoría + reparaciones ",
+          "includesEs": "Navegación por teclado, contraste de color, etiqueta ARIA",
+          "includes": "Keyboard nav, color contrast, ARIA label",
+          "price": "$160 - $320",
+          "time": "Hours",
+          "timeEs": "Horas "
+        },
+        {
+          "name": "Schema markup (JSON-LD)",
+          "nameEs": "Esquema markup (JSON-LD)",
+          "includes": "LocalBusiness, FAQPage, etc.",
+          "includesEs": "Negocios locales, página de preguntas frecuentes, etc.",
+          "price": "$40 - $80 ",
+          "time": "Hours",
+          "timeEs": "Horas"
         }
       ]
     },
